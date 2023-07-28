@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+header {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  padding: 16px 100px;
+}
+header .logo {
+  height: 50px;
+}
+header .logo img {
+  display: block;
+  height: 100%;
+}
+header .busca {
+  margin: 0 auto;
+  width: 40em;
+  position: relative;
+}
+header .busca input {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  padding-left: 10px;
+  color: #FFFFFF;
+  background-color: #333333;
+  border: 2px solid #444444;
+  font-weight: 700;
+  transition-duration: 650ms;
+  padding-left: 10px;
+}
+header .busca input:focus {
+  border-color: #C61067;
+}
+header .busca input:focus + box-icon {
+  fill: #C61067;
+  cursor: pointer;
+}
+header box-icon {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  fill: #FFFFFF;
+  position: absolute;
+  cursor: pointer;
+  top: calc(50% - 20px);
+  right: 6px;
+  transition-duration: 200ms;
+}
+
+main {
+  padding: 60px 100px;
+}
+main .mini-title {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+main .btn {
+  min-height: 30px;
+  background-color: transparent;
+  border: 1px solid #C61067;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  transition-duration: 300ms;
+  cursor: pointer;
+}
+main .btn:hover {
+  background-color: #C61067;
+}
+main .btn:active {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+main .btn:active + box-icon {
+  fill: #C61067;
+}
+main .btn box-icon {
+  width: 30px;
+  height: 30px;
+  fill: #FFFFFF;
+}
+main .modal {
+  visibility: hidden;
+  opacity: 0;
+  width: 500px;
+  position: fixed;
+  top: 50%;
+  left: calc(50% - 250px);
+  border-radius: 10px;
+  background-color: #333333;
+  padding: 16px;
+  transform: translateY(-50%);
+  transition-duration: 200ms;
+}
+main .modal ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  padding: 6px;
+  background-color: #444444;
+}
+main .modal ul li box-icon {
+  background-color: #333333;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  cursor: pointer;
+  transition-duration: 200ms;
+  border-radius: 20px;
+  fill: #FFFFFF;
+}
+main .modal ul li box-icon:hover {
+  background-color: #C61067;
+}
+main .modal h3 {
+  margin-bottom: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+}
+main .modal h3 box-icon {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  cursor: pointer;
+  transition-duration: 200ms;
+  border-radius: 20px;
+  fill: #FFFFFF;
+}
+main .modal h3 box-icon:hover {
+  background-color: #C61067;
+}
+main .modal form {
+  width: 100%;
+}
+main .modal form label {
+  display: block;
+  margin-bottom: 6px;
+}
+main .modal form input {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  padding-left: 10px;
+  color: #FFFFFF;
+  background-color: #333333;
+  border: 2px solid #444444;
+  font-weight: 700;
+  transition-duration: 200ms;
+  padding-left: 10px;
+  margin-bottom: 16px;
+}
+main .modal form input:focus {
+  border-color: #C61067;
+}
+main .active {
+  visibility: visible;
+  opacity: 0.85;
+}
+main #formCriar {
+  transition-duration: 400ms;
+}
+main #formCriar form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  line-height: 3em;
+  height: 3em;
+}
+main #teams h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition-duration: 1s;
+}
+main #teams h3 button {
+  width: 12em;
+  justify-content: space-around;
+}
+main #teams ul {
+  margin-top: 16px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+main #teams ul li {
+  background-color: #333333;
+  padding: 16px;
+  border-radius: 5px;
+}
+main #teams ul li.empty {
+  width: 100%;
+  text-align: center;
+}
+main #teams ul li h1 {
+  width: 100px;
+  height: 100px;
+  background-color: #444444;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 26px auto;
+  font-size: 50px;
+  font-weight: normal;
+  line-height: 50px;
+}
+main #teams ul li h1 span {
+  display: block;
+  font-size: 16px;
+  line-height: 16px;
+}
+main #teams ul li h5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #teams ul li h5 box-icon {
+  fill: #FFFFFF;
+  cursor: pointer;
+}
+main #teams ul li h5 box-icon:hover {
+  fill: #C61067;
+}
+main #teams ul li .acoes {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+}
+main #teams ul li .acoes button:first-child {
+  width: 8em;
+  justify-content: center;
+}
+main #teams ul li .acoes button:last-child.box-icon {
+  padding-right: 0;
+}
+main #overlay {
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5843137255);
+  transition-duration: 400ms;
+  pointer-events: none;
+}
+main #overlay.active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+  cursor: pointer;
+}
+main #criarParticipante {
+  transition-duration: 400ms;
+}
+main #criarParticipante form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  line-height: 3em;
+  height: 3em;
+}
+
+/*--------------------------RESPONSIVIDADE GERAL----------------------------------*/
+@media (min-width: 481px) and (max-width: 900px) {
+  /* tablets */
+}
+/*--------------------------------------------------------------------------------*/
+/*--------------------------SOMENTE TELAS-----------------------------------------*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* celulares */
+}
+/*--------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+@media only screen and (min-device-width: 481px) and (max-device-width: 900px) {
+  /* tablets */
+}
+/*--------------------------------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  color: #FFFFFF;
+}
+
+body {
+  background-color: #242424;
+}/*# sourceMappingURL=style.css.map */

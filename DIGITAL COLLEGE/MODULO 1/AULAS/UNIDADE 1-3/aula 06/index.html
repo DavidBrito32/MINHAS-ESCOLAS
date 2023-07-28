@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Aula 06</title>
+</head>
+<body id="corpo">
+    <header>
+        cabeçalho
+    </header>
+
+    <main>
+        conteudo
+    </main>
+    
+    
+    
+    
+    <footer>
+        <div>
+            <h2>LOGO</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et commodi repudiandae vel voluptatem minus aut? Iste aperiam incidunt fugit repellat, aliquam illum, similique ducimus optio eaque, ut cumque culpa natus!
+            <ul>
+                <li>
+                <a href="#!"><i title="Facebook" class="fa-brands fa-facebook-square"></i></a>
+            </li>
+                <li>
+                <a href="#!"><i title="Instagram" class="fa-brands fa-instagram"></i></a>
+            </li>
+                <li>
+                <a href="#!"><i title="linkedin" class="fa-brands fa-linkedin"></i></a>
+            </li>
+                <li>
+                <a href="#!"><i title="Youtube" class="fa-brands fa-youtube"></i></a>
+            </li>
+        </ul>
+            </p>
+            
+        </div>
+
+        <div>
+            <h5>Acesso Rápido:</h5>
+            <ul>
+                <li><a href="#!">Home</a></li>
+
+                <li><a href="#!">Sobre nós</a></li>
+
+                <li><a href="#!">Servicos</a></li>
+
+                <li><a href="#!">Clientes</a></li>
+
+                <li><a href="#!">Contato</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h5>Assine nossa newsletter</h5>
+            <div class="newsletter">
+                <input type="email" required>
+                <span>Digite seu melhor e-mail: </span>
+
+                <button><i class="fa fa-paper-plane"></i></button>
+            </div>
+        </div>
+
+        <div>
+            <h6>&copy; 2023 Todos os direitos reservados.</h6>
+        </div>
+    </footer>
+
+    <div class="voltar active">
+        <i class="fa fa-arrow-up"></i>
+    </div>
+
+    <script>
+        let voltar = document.querySelector(".voltar");
+        corpo.onscroll = () => {
+           let rolagem = window.pageYOffset;
+           
+           if(rolagem > 300){
+                voltar.classList.add('active');
+           }else {
+            voltar.classList.remove('active');
+           }
+        }
+    </script>
+</body>
+</html>

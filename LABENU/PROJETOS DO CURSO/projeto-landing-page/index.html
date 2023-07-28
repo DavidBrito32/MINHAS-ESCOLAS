@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=,, initial-scale=1.0">
+    <!--ESPAÇO PARA IMPORTS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--ICONES-->
+
+    <!--ESPAÇO PARA CSS-->
+    <link rel="stylesheet" href="modulo scss/style.css">
+    <link rel="stylesheet" href="style/media_query.css">
+    <title>F4BANK - SEU FUTURO FINANCEIRO</title>
+</head>
+<body>    
+  <header>
+    <div class="logo">
+      <img src="./images/Logomarca.png" alt="Logo F4Bank">
+    </div>
+
+    <div id="menuBurguer" class="hamburguer">
+      <span class="barra"></span>
+      <span class="barra"></span>
+      <span class="barra"></span>
+    </div>
+
+    <nav id="navbar">
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#servicos">Servicos</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#!">Sobre</a></li>
+        <li id="abreConta"><a href="#!">Acesse sua conta</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <section class="banner">
+      <div class="texto">
+        <h1>F4BANK</h1>
+        <h1>"Descubra uma nova era financeira: oportunidades ilimitadas para alcançar seus sonhos!"</h1>
+      </div>
+
+      <div class="imagem">
+        <img src="images/F4BANK.png" alt="">
+      </div>
+    </section>   
+
+    <section id="servicos" class="servicos">
+      <div class="imagem">
+        <h1>PIX rapido e seguro, com protecao exclusiva voce so encontra aqui!</h1>
+        <img src="images/models/PIX.png" alt="PIX">
+        <h1 class="empresas">Solucoes exclusivas e completas para sua empresa</h1>
+        <img class="imagem2" src="images/models/solucao para empresas.jpg" alt="EMPRESARIAL">
+      </div>
+      <div class="pagamentos">
+        <a href="#!"><img src="images/models/PAGAMENTOS.png" alt=""></a>
+      </div>
+      <div class="app">
+        <a href="#!"><img src="images/models/APP.png" alt=""></a>
+      </div>
+    </section>
+
+    <section id="contato" class="formulario">
+        <div class="beneficions">
+          <div class="examples">
+            <img src="images/models/mande sua dúvida entre em contato telefone mensagem celular instagram post .png" alt="Projecoes">
+          </div>
+        </div>
+          <form>
+            <h1>Entre em contato conosco</h1>
+  
+            <label for="name">Informe seu nome:</label>
+            <input type="text" name="name" id="name" placeholder="Digite seu nome:" required>
+  
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu E-mail:" required>
+  
+            <label for="mensagem">Insira sua mensagem:</label>
+            <textarea name="mensagem" id="mensagem" cols="20" rows="5" placeholder="Insira sua mensagem"></textarea>
+  
+            <button>Enviar</button>
+          </form>
+
+        
+    </section>
+
+    <div id="overlay" class="overlay"></div>
+    <div id="conta" class="acessar-conta">
+      <form>
+        <h1>Acesse sua conta:  <span id="fechaConta">X</span></h1>
+        <label for="agencia">Agencia</label>
+        <input type="number" name="agencia" id="agencia" placeholder="EX: 4444">
+        <label for="cc">Conta Corrente com DIG: <a href="#!"><i class="fa-solid fa-question"></i></a></label>
+        <input type="number" name="cc" id="cc" placeholder="EX: 123456-00">
+        <label for="senha">Senha primaria:</label>
+        <input type="password" name="senha" id="senha" placeholder="Alfanumerica 8 DIG">
+        <label for="paSec">Palavra de seguranca:</label>
+        <input type="password" name="paSec" id="paSec" placeholder="Definido na abertura da conta 8 DIG">
+
+        <div class="btn-conta"><a href="#!">Acessar Conta</a></div>
+        
+      </form>
+    </div>
+
+
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin%3Flang%3Dpt" target="_blank"><i class="fa-brands fa-twitter azul"></i></a>
+      <a href="https://pt-br.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f azulF"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram inst"></i></a>
+    </div>
+
+    <div class="logoRodape">
+      <img src="images/Logomarca.png" alt="Logomarca">
+    </div>
+
+    <div class="endereco">
+      <address>
+        <a href="https://goo.gl/maps/hDnsU7kgBM8eDydXA" target="_blank"><i class="fa-solid fa-map-location-dot"></i> Avenida Tocantins, N 236-A, Vila Jardim Rio Claro, Jataí, Goias CEP:75802095</a>
+      </address>
+    </div>
+
+    <div class="direitos">
+      <p>© Todos os direitos reservados</p>
+    </div>
+
+  </footer>
+
+
+
+
+  <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+  <script src="script/index.js"></script>  <!--JAVASCRIPT-->
+</body>
+</html>

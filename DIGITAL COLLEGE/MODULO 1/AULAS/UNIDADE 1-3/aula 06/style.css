@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    background-image: linear-gradient(135deg, #69727b, #506170 );
+    height: 350px;
+    padding: 60px 120px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+footer > div{
+    flex: 1;
+}
+
+footer > div:last-child{
+    width: 100%;
+    flex: initial;
+    text-align: right;    
+}
+
+footer h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 14px;
+    color: white;
+    line-height: 20px;
+    margin-bottom: 20px;
+
+}
+
+footer div:first-child ul {
+    display: flex;
+    gap: 16px;
+}
+
+footer div:first-child ul a { /*Primeiro filho*/
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    display: block;
+    border: 2px solid white;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+footer div:first-child ul a::after {
+    content: "";
+    width: 20px;
+    height: 50px;
+    position: absolute;
+    background-color: #ffffff80;
+    top: 0;
+    left: -50px;
+    transform: skewX(35deg);
+
+}
+
+footer div:first-child ul a:hover::after {
+    left: 60px;
+    transition-duration: 700ms;
+}
+
+footer h5 {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 16px;
+}
+
+footer > div:nth-child(2) a{
+    line-height: 25px;
+    color: #ffffff50;
+    transition-duration: 300ms;
+    display: block;
+}
+
+footer > div:nth-child(2) a:hover {
+    color: white;
+    padding-left: 16px;
+}
+
+footer .newsletter {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+footer .newsletter input {
+    height: 60px;
+    padding-left: 10px;
+    width: 100%;
+    border: 2px solid #ffffff50;
+    border-radius: 5px;
+    background-color: transparent;
+    z-index: 1;
+    color: white;
+}
+
+footer .newsletter input:focus {
+    border-color: white;
+}
+
+footer .newsletter button {
+    width: 50px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+footer .newsletter button i {
+    font-size: 24px;
+    color: white;
+}
+
+footer .newsletter span{
+    position: absolute;
+    font-size: 18px;
+    color: #ffffff50;
+    left: 18px;
+    transition-duration: 300ms;
+}
+
+footer .newsletter input:focus + span {
+    transform: translateY(-16px);
+    left: 6px;
+    font-size: 12px;
+}
+
+footer h6 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+header {
+    border: 1px solid blue;
+    height: 50px;
+}
+
+main {
+    border: 1px solid red;
+    height: 1000px;
+}
+
+.voltar {
+    width: 50px;
+    height: 50px;
+    background-color: #ffdd00;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 25px;
+    line-height: 50px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.voltar.active {
+    opacity: 1;
+    visibility: visible;
+}

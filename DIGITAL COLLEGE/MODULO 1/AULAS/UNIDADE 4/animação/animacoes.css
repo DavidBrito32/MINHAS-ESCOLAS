@@ -1,0 +1,33 @@
+@keyframes animacao {
+    0%{
+        width: 20px;
+        top: 70px;
+        visibility: hidden;
+        opacity: 0;
+    }
+    25%{
+        width: 20px;
+        top: 50px;
+        border-radius: 50%;
+        left: 15%;
+
+    }
+    50%{
+        width: 35px;
+        top: 50px;
+        border-radius: 50%;
+        left: calc(35% - 35px);
+    }
+    75%{
+        width: 35px;
+        top: 50px;
+        left: calc(55% - 35px);
+
+    }
+    100%{
+        top: 70px;
+        width: 35px;
+        border-radius: 50%;
+        left: calc(100% - 35px);
+    }
+}

@@ -1,0 +1,976 @@
+/*--------------------------RESPONSIVIDADE GERAL----------------------------------*/
+@media (min-width: 320px) and (max-width: 550px) {
+//celulares
+body{
+    overflow-x: hidden;
+
+}
+header{
+    width: 100%;
+    height: 78px;
+    background: black;
+    display: flex;
+    padding: 15px 0 0 55px;
+    overflow: hidden;
+
+    .logo{
+        width: 142px;
+        height: 100%;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: -45px;
+        top: -15px;
+
+            img{
+                width: 53%;
+                height: 100%;
+            }
+    }
+}
+main{
+    width: 100vw;
+    height: 900px;
+    overflow: hidden;
+    background-color: black;
+
+    .container-main{
+        width: 100%;
+        height: auto;
+        padding: 0 20px;
+        height: 100%;
+
+        .conteudo-extra{
+            top: 25px;
+        }
+    }
+}
+
+footer{
+    border-top: 2px solid #8c8c8c;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background-color: black;
+
+    .duvidas{
+        width: 100%;
+        font-size: 1em;
+        left: -2px;
+        top: -5px;
+
+        p{
+            font-size: 0.5em;
+        }
+            a{
+                font-size: 0.2em;
+            }
+    }
+
+    .listas{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+            #col-1{
+                left: -130px;
+                top: 0px;
+                    li{
+
+                        &:nth-child(2){
+                            top: 50px;
+                        }
+                    }
+
+            }
+
+            #col-2{
+                position: absolute;
+                right: 150px;
+                    a{
+                        font-size: 1rem;
+                    }
+
+                    li{
+
+                        &:nth-child(2){
+                            top: 50px;
+                        }
+                    }
+            }
+
+            #col-3{
+                width: 190px;
+                position: absolute;
+                left: -10px;
+                top: 105px;
+                    a{
+                        font-size: 1rem;
+                    }
+
+                    li{
+                        top: 0;
+                        right: -50px;
+                    }
+            }
+
+            #col-4{
+                width: 190px;
+                position: absolute;
+                right: 0px !important;
+                top: 105px;
+                border: 1px solid gray;
+                
+                    a{
+                        font-size: 1rem;
+                    }
+
+                    li{
+                        top: 0;
+                        right: -20px;
+                    }
+
+            }
+    }
+
+    .select{
+        left: 20px;
+        top: 70%;
+    }
+}
+
+} //-> OK
+
+@media (min-width : 551px) and (max-width : 740px) {
+    /* tablets */
+    body{
+        overflow-x: hidden;
+    
+    }
+    header{
+        width: 100%;
+        height: 90px;
+        background: black;
+        display: flex;
+        padding: 15px 0 0 55px;
+        overflow: hidden;
+    
+        .logo{
+            width: 25%;
+            height: 100%;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            position: relative;
+            left: -38px;
+            top: -9px;
+    
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+        }
+    }
+    
+    main{
+        width: 100vw;
+        height: 900px;
+        overflow: hidden;
+        background-color: black;
+        padding: 20px 10px 0 10px;
+    
+        .container-main{
+            width: 100%;
+            height: auto;
+            padding: 0 20px;
+            height: 100%;
+    
+    
+    
+            .conteudo-extra{
+                top: 25px;
+            }
+        }
+    }
+    
+    footer{
+        border-top: 2px solid #8c8c8c;
+        width: 100%;
+        height: 400px ;
+        overflow: hidden;
+        background-color: black;
+        position: relative;
+    
+        .duvidas{
+            width: 100%;
+            font-size: 1em;
+            left: -2px;
+            top: -5px;
+    
+            p{
+                font-size: 0.5em;
+            }
+                a{
+                    font-size: 0.2em;
+                }
+        }
+
+        .col-4{
+            left: -150px;
+            border: 1px solid gray;
+        }
+
+    
+    
+        .select{
+            left: 40px;
+            top: 63%;
+        }
+    }
+
+}
+
+@media (min-width : 741px) and (max-width : 1248px){
+
+}
+/*--------------------------------------------------------------------------------*/
+
+/*--------------------------SOMENTE TELAS-----------------------------------------*/
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* celulares */
+    body{
+        overflow-x: hidden;
+    
+    }
+    header{
+        width: 100%;
+        height: 78px;
+        background: black;
+        display: flex;
+        padding: 15px 0 0 55px;
+        overflow: hidden;
+    
+        .logo{
+            width: 142px;
+            height: 100%;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            position: relative;
+            left: -45px;
+            top: -15px;
+    
+                img{
+                    width: 53%;
+                    height: 100%;
+                }
+        }
+    }
+    
+    main{
+        width: 100vw;
+        height: 60vh;
+        overflow: hidden;
+        background-color: black;
+    
+        .container-main{
+            width: 100%;
+            height: auto;
+            padding: 0 20px;
+            height: 100%;
+    
+    
+    
+            .conteudo-extra{
+                top: 25px;
+            }
+        }
+    }
+    
+    footer{
+        border-top: 2px solid #8c8c8c;
+        width: 100%;
+        height: 31vh;
+        overflow: hidden;
+        background-color: black;
+    
+        .duvidas{
+            width: 100%;
+            font-size: 1em;
+            left: -2px;
+            top: -5px;
+    
+            p{
+                font-size: 0.5em;
+            }
+                a{
+                    font-size: 0.2em;
+                }
+        }
+    
+        .listas{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+                #col-1{
+                    left: -130px;
+                    top: 0px;
+                        li{
+    
+                            &:nth-child(2){
+                                top: 50px;
+                            }
+                        }
+    
+                }
+    
+                #col-2{
+                    position: absolute;
+                    right: 150px;
+                        a{
+                            font-size: 1rem;
+                        }
+    
+                        li{
+    
+                            &:nth-child(2){
+                                top: 50px;
+                            }
+                        }
+                }
+    
+                #col-3{
+                    width: 190px;
+                    position: absolute;
+                    left: -20px;
+                    top: 105px;
+                        a{
+                            font-size: 1rem;
+                        }
+    
+                        li{
+                            top: 0;
+                            right: -20px;
+                        }
+                }
+    
+                #col-4{
+                    width: 190px;
+                    position: absolute;
+                    right: 49px;
+                    top: 105px;
+                    
+                        a{
+                            font-size: 1rem;
+                        }
+    
+                        li{
+                            top: 0;
+                            right: -20px;
+                        }
+    
+                }
+        }
+    
+        .select{
+            left: 20px;
+            top: 70%;
+        }
+    }
+}
+
+//IPHONE XR - 12PRO MAX
+@media only screen and (min-device-width: 390px) and (max-device-width: 844px){
+    body{
+        overflow-x: hidden;
+    
+    }
+    header{
+        width: 100%;
+        height: 78px;
+        background: black;
+        display: flex;
+        padding: 15px 0 0 55px;
+        overflow: hidden;
+    
+        .logo{
+            width: 142px;
+            height: 100%;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            position: relative;
+            left: -45px;
+            top: -15px;
+    
+                img{
+                    width: 53%;
+                    height: 100%;
+                }
+        }
+    }
+    
+    main{
+        width: 100vw;
+        height: 520px;
+        overflow: hidden;
+        background-color: black;
+    
+        .container-main{
+            width: 100%;
+            height: auto;
+            padding: 0 20px;
+            height: 100%;
+    
+    
+    
+            .conteudo-extra{
+                top: 25px;
+            }
+        }
+    }
+    
+    footer{
+        border-top: 2px solid #8c8c8c;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        background-color: black;
+    
+        .duvidas{
+            width: 100%;
+            font-size: 1em;
+            left: -2px;
+            top: -5px;
+    
+            p{
+                font-size: 0.5em;
+            }
+                a{
+                    font-size: 0.2em;
+                }
+        }
+    
+        .listas{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+                #col-1{
+                    left: -130px;
+                    top: 0px;
+                        li{
+    
+                            &:nth-child(2){
+                                top: 50px;
+                            }
+                        }
+    
+                }
+    
+                #col-2{
+                    position: absolute;
+                    right: 150px;
+                        a{
+                            font-size: 1rem;
+                        }
+    
+                        li{
+    
+                            &:nth-child(2){
+                                top: 50px;
+                            }
+                        }
+                }
+    
+                #col-3{
+                    width: 190px;
+                    position: absolute;
+                    left: -20px;
+                    top: 105px;
+                        a{
+                            font-size: 1rem;
+                        }
+    
+                        li{
+                            top: 0;
+                            right: -20px;
+                        }
+                }
+    
+                #col-4{
+                    width: 190px;
+                    position: absolute;
+                    right: 49px;
+                    top: 105px;
+                    
+                        a{
+                            font-size: 1rem;
+                        }
+    
+                        li{
+                            top: 0;
+                            right: -20px;
+                        }
+    
+                }
+        }
+    
+        .select{
+            left: 20px;
+            top: 70%;
+        }
+    }
+} //-> OK
+
+//IPHONE SE
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px){
+    body{
+        overflow-x: hidden;
+    
+    }
+    header{
+        width: 100%;
+        height: 78px;
+        background: black;
+        display: flex;
+        padding: 15px 0 0 55px;
+        overflow: hidden;
+    
+        .logo{
+            width: 142px;
+            height: 100%;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            position: relative;
+            left: -45px;
+            top: -15px;
+    
+                img{
+                    width: 53%;
+                    height: 100%;
+                }
+        }
+    }
+    
+    main{
+        width: 100vw;
+        height: 79vh;
+        overflow: hidden;
+        background-color: black;
+    
+        .container-main{
+            width: 100%;
+            height: auto;
+            padding: 0 20px;
+            height: 100%;
+    
+    
+    
+            .conteudo-extra{
+                top: 25px;
+            }
+        }
+    }
+    
+    footer{
+        border-top: 2px solid #8c8c8c;
+        width: 100%;
+        height: 45vh;
+        overflow: hidden;
+        background-color: black;
+    
+        .duvidas{
+            width: 100%;
+            font-size: 1em;
+            left: -2px;
+            top: -5px;
+    
+            p{
+                font-size: 0.5em;
+            }
+                a{
+                    font-size: 0.2em;
+                }
+        }
+    
+        .listas{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            top: -20px;
+                #col-1{
+                    left: -125px;
+                    top: 0px;
+                        li{
+    
+                            &:nth-child(2){
+                                top: 50px;
+                            }
+                        }
+    
+                }
+    
+                #col-2{
+                    position: absolute;
+                    right: 130px;
+                        a{
+                            font-size: 1rem;
+                        }
+    
+                        li{
+    
+                            &:nth-child(2){
+                                top: 50px;
+                            }
+                        }
+                }
+    
+                #col-3{
+                    width: 190px;
+                    position: absolute;
+                    left: -27px;
+                    top: 105px;
+                        a{
+                            font-size: 1rem;
+                        }
+    
+                        li{
+                            top: 0;
+                            right: 0px;
+                        }
+                }
+    
+                #col-4{
+                    width: 190px;
+                    position: absolute;
+                    right: 15px;
+                    top: 105px;
+                    
+                        a{
+                            font-size: 1rem;
+                        }
+    
+                        li{
+                            top: 0;
+                            right: 20px;
+                        }
+    
+                }
+        }
+    
+        .select{
+            left: 20px;
+            top: 67%;
+        }
+    }
+} //-> OK
+/*--------------------------------------------------------------------------------*/
+
+//GALAXY S8+
+@media only screen and (min-device-width : 360px) and (max-device-width : 740px){
+    body{
+        overflow-x: hidden;
+    
+    }
+    header{
+        width: 100%;
+        height: 78px;
+        background: black;
+        display: flex;
+        padding: 15px 0 0 55px;
+        overflow: hidden;
+    
+        .logo{
+            width: 142px;
+            height: 100%;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            position: relative;
+            left: -45px;
+            top: -15px;
+    
+                img{
+                    width: 53%;
+                    height: 100%;
+                }
+        }
+    }
+    
+    main{
+        width: 100vw;
+        height: 520px ;
+        overflow: hidden;
+        background-color: black;
+    
+        .container-main{
+            width: 100%;
+            height: auto;
+            padding: 0 20px;
+            padding-bottom: 10px;
+            height: 100%;
+    
+    
+    
+            .conteudo-extra{
+                top: 16px;
+            }
+        }
+    }
+    
+    footer{ 
+        border-top: 1px solid #8c8c8c;
+        width: 100%;
+        height: 312px;
+        overflow: hidden;
+        background-color: black;
+    
+        .duvidas{
+            width: 100%;
+            font-size: 1em;
+            left: -2px;
+            top: -5px;
+    
+            p{
+                font-size: 0.5em;
+            }
+                a{
+                    font-size: 0.2em;
+                }
+        }
+    
+        .listas{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 9px;
+                #col-1{
+                    left: -120px;
+                    top: 0px;
+                        li{
+                            
+    
+                            &:nth-child(2){
+                                top: 55px;
+                                left: 42px;
+                            }
+                        }
+    
+                }
+    
+                #col-2{
+                    position: absolute;
+                    width: 40px;
+                    right: 160px;
+                        a{
+                            font-size: 1rem;
+                        }
+    
+                        li{
+                            width: 100px;
+                            line-height: 15px;
+                            top: -5px;
+                        
+                            &:nth-child(2){
+                                top: 60px;
+                                width: 100px;
+                                
+                            }
+                        }
+                }
+    
+                #col-3{
+                    width: 160px;
+                    position: absolute;
+                    left: -26px;
+                    top: 105px;
+                        a{
+                            font-size: 1rem;
+                        }
+    
+                        li{
+                            top: 3px;
+                            right: -20px;
+                        }
+                }
+    
+                #col-4{
+                    width: 140px;
+                    position: absolute;
+                    right: 60px;
+                    top: 108px;
+                    
+                        a{
+                            font-size: 1rem;
+                        }
+    
+                        li{
+                            top: 0;
+                            right: -20px;
+                        }
+    
+                }
+        }
+    
+        .select{
+            left: 20px;
+            top: 69%;
+        }
+    }
+}
+/*--------------------------------------------------------------------------------*/
+
+//GALAXY FOLD VERSION
+@media only screen and (min-device-width: 280px) and (max-device-width: 653px){
+    body{
+        overflow-x: hidden;
+    
+    }
+    header{
+        width: 100%;
+        height: 78px;
+        background: black;
+        display: flex;
+        padding: 15px 0 0 55px;
+        overflow: hidden;
+    
+        .logo{
+            width: 142px;
+            height: 100%;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            position: relative;
+            left: -45px;
+            top: -15px;
+    
+                img{
+                    width: 53%;
+                    height: 100%;
+                }
+        }
+    }
+    
+    main{
+        width: 100vw;
+        height: 520px;
+        overflow: hidden;
+        background-color: black;
+    
+        .container-main{
+            width: 100%;
+            height: auto;
+            padding: 0 20px;
+            height: 100%;
+    
+    
+    
+            .conteudo-extra{
+                top: 25px;
+            }
+        }
+    }
+    
+    footer{
+        border-top: 2px solid #8c8c8c;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        background-color: black;
+    
+        .duvidas{
+            width: 100%;
+            font-size: 1em;
+            left: -2px;
+            top: -5px;
+    
+            p{
+                font-size: 0.5em;
+            }
+                a{
+                    font-size: 0.2em;
+                }
+        }
+    
+        .listas{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+                #col-1{
+                    left: -130px;
+                    top: 0px;
+                        li{
+    
+                            &:nth-child(2){
+                                top: 50px;
+                            }
+                        }
+    
+                }
+    
+                #col-2{
+                    position: absolute;
+                    right: 150px;
+                        a{
+                            font-size: 1rem;
+                        }
+    
+                        li{
+    
+                            &:nth-child(2){
+                                top: 50px;
+                            }
+                        }
+                }
+    
+                #col-3{
+                    width: 190px;
+                    position: absolute;
+                    left: -20px;
+                    top: 105px;
+                        a{
+                            font-size: 1rem;
+                        }
+    
+                        li{
+                            top: 0;
+                            right: -20px;
+                        }
+                }
+    
+                #col-4{
+                    width: 190px;
+                    position: absolute;
+                    right: 49px;
+                    top: 105px;
+                    
+                        a{
+                            font-size: 1rem;
+                        }
+    
+                        li{
+                            top: 0;
+                            right: -20px;
+                        }
+    
+                }
+        }
+    
+        .select{
+            left: 20px;
+            top: 70%;
+        }
+    }
+}
+/*--------------------------------------------------------------------------------*/
+
+@media only screen and (min-device-width : 481px) and (max-device-width : 900px) {
+    /* tablets */
+  
+}
+
+@media only screen and (min-device-width: 901px) and (max-device-width: 1248px){
+
+}
+/*--------------------------------------------------------------------------------*/

@@ -1,0 +1,15 @@
+a:link { /*LINKS NAO VISITADOS*/
+    color: brown;
+}
+
+a:visited { /*LINKS VISITADOS*/
+    color: gray;
+}
+
+a:hover { /*MOUSE PASSAR POR CIMA*/
+    color: aqua;
+}
+
+a:active { /*AO CLICAR*/
+    color: green;
+}

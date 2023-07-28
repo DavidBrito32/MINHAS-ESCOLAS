@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dedede;
+    padding: 100px;
+}
+
+h2{
+    width: 50%;
+    margin-bottom: 26px;
+    position: relative;
+}
+
+h2::after{
+    content: "";
+    width: 200px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    bottom: -6px;
+    border-radius: 20px;
+    background-image: linear-gradient(90deg ,blueviolet, pink);
+    left: 0;
+}
+
+table {
+    width: 100%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: black;
+    color: white;
+    height: 50px;
+}
+
+td {
+    height: 40px;
+    padding-left: 10px;
+    border-bottom: 1px solid #dedede;
+    border-left: 1px solid #dedede;
+    
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ddeede;
+
+}
