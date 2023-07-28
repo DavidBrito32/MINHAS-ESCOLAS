@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    outline: none;
+}
+
+body{
+    background-color: rgb(239, 235, 235);
+}
+
+.container{
+    margin: 100px auto;
+    border: 1px solid black;
+    display: flex;
+    width: 90%;
+    flex-wrap: nowrap;
+    gap: 0;
+    position: relative;
+}
+
+.container .atirador {
+    width: 400px;
+}
+
+.container .atirador img{
+    width: 100%;
+}
+
+.container .logo{
+    border: 1px solid black;
+    width: 100%;
+}
+
+.container .logo img{
+    width: 2%;
+    position: absolute;
+    top: 70px;
+    animation-name: animacao;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+}
+
+

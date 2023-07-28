@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=,, initial-scale=1.0" />
+    <!--ESPAÇO PARA IMPORTS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!--BOOTSTRAP-->
+
+    <!--ESPAÇO PARA CSS-->
+    <link rel="stylesheet" href="modulo scss/style.css" />
+    <link rel="stylesheet" href="style/media_query.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-principal">
+      <header>
+        <div class="logomarca_netflix">
+          <img src="images/Netflix_2015_logo.svg" alt="" />
+        </div>
+      </header>
+
+      <main>
+        <div class="container_main">
+          <form>
+            <h1>Entrar</h1>
+            <div class="campo-email">
+              <input type="email" name="email" id="email" />
+              <span for="" id="email1">Email ou número de telefone</span>
+              <p id="invisivel1" class="invisivel">
+                Informe um email ou número de telefone válido.
+              </p>
+            </div>
+
+            <div class="campo-senha">
+              <input type="password" name="senha" id="senha1" />
+              <span id="senha" for="senha">Senha</span>
+              <p id="oc" class="invisivel2">
+                A senha deve ter entre 4 e 60 caracteres.
+              </p>
+            </div>
+          </form>
+          <div class="botao_e_checkbox">
+            <button>Entrar</button>
+            <div id="check">
+              <input type="checkbox" name="lembre" id="lembre" />
+              <div id="caixa_input">
+                <div id="dentro"></div>
+              </div>
+              <label id="lembre" for="lembre">Lembre-se de mim?</label>
+            </div>
+            <p><a href="https://www.netflix.com/br/LoginHelp" target="_blank">Precisa de ajuda?</a></p>
+          </div>
+          <div class="novo">
+            <p>Novo por aqui? <a href="https://www.netflix.com/br/" target="_blank">Assine agora</a></p>
+            <p>
+              Esta página é protegida pelo Google reCAPTCHA para garantir que
+              você não é um robô. <a id="exibeTexto" href="#!">Saiba mais</a>.
+            </p>
+          </div>
+          <div id="oculto_novo">
+            <p>
+              As informações recolhidas pelo Google reCAPTCHA estão sujeitas à
+              <a href="https://policies.google.com/privacy" target="_blank">Política de Privacidade</a> e
+              <a href="https://policies.google.com/terms" target="_blank">Termos de Uso</a>, e são usadas para oferecer, manter
+              e melhorar o serviço reCAPTCHA e por questões de segurança (não
+              são usadas para exibir anúncios personalizados pelo Google).
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+
+        <div class="duvidas">
+          <p>Dúvidas? Ligue <a href="tel: 0800 591 8942">0800 591 8942</a></p>
+        </div>
+
+        <div class="listas">
+          <ul id="col-1">
+            <li><a href="https://help.netflix.com/pt/node/412" target="_blank">Perguntas frequentes</a></li>
+            <li><a href="https://help.netflix.com/pt/" target="_blank">Preferências de cookies</a></li>
+          </ul>
+          <ul id="col-2">
+            <li><a href="https://help.netflix.com/legal/corpinfo" target="_blank">Central de ajuda</a></li>
+            <li><a href="#!">Informações corporativas</a></li>
+          </ul>
+          <ul id="col-3">
+            <li><a href="https://help.netflix.com/legal/termsofuse" target="_blank">Termos de Uso</a></li>
+          </ul>
+
+          <ul id="col-4">
+            <li><a href="https://help.netflix.com/legal/privacy" target="_blank">Privacidade</a></li>
+          </ul>
+        </div>
+
+        <div class="select">
+          <select>
+            <option>Português</option>
+            <option>English</option>
+          </select>
+        </div>
+
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <!--BOOTSTRAP-->
+    <script src="script/index.js"></script>
+    <!--JAVASCRIPT-->
+  </body>
+</html>

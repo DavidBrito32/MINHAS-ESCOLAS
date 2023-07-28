@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-size: 1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+header {
+  width: 100%;
+}
+header nav.navbar {
+  background-color: #466473 !important;
+}
+
+main #banners {
+  box-shadow: 1px 10px 30px black !important;
+}
+main #banners .carousel-item {
+  height: calc(100vh - 56px);
+}
+main #banners .carousel-item::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5843137255);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+main #banners .carousel-caption {
+  right: 0;
+  top: 42%;
+  left: 15%;
+  text-align: left;
+}
+main #sobre {
+  padding: 100px 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+main #sobre .row {
+  width: 100%;
+}
+main #sobre .row div {
+  margin: 20px auto;
+}
+main #sobre .row div p {
+  text-align: justify;
+}
+main #servicos {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+main #servicos img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .carousel-item img {
+    width: 100vw;
+    height: calc(100vh - 36px);
+  }
+  .carousel-caption {
+    width: 350px;
+    top: 0%;
+    left: 8%;
+    text-align: left;
+    display: block !important;
+    font-size: 0.4rem !important;
+  }
+  .carousel-caption h3 {
+    font-size: 0.4rem !important;
+  }
+}/*# sourceMappingURL=style.css.map */

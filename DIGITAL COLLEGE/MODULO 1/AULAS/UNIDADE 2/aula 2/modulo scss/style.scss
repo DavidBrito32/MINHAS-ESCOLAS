@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-size: 1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+//********///ESPACO DE IMPORTS///************//
+@import "divisao_de_paginas/header"; //******//
+@import "divisao_de_paginas/main"; //*******//
+@import "divisao_de_paginas/footer"; //****//
+@import "divisao_de_paginas/media-Query"; //
+//***************************************//

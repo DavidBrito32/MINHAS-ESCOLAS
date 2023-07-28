@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main section{
+    width: 32vw;
+    height: 35vh;
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+    main{
+        flex-direction: column;
+    }
+
+   main section{
+    color: red;
+        width: 100vw;
+        align-items: flex-start;
+    }
+}

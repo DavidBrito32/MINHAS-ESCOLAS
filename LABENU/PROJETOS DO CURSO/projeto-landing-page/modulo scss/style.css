@@ -1,0 +1,1481 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,400&display=swap");
+header {
+  width: 100vw;
+  height: 13vh;
+  background: linear-gradient(to right, #FF914C, #e79128);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 80px;
+  /*------------------------------------------------------------CONFIGURACAO DO MENU HAMBURGUER--------------------------------------------------------*/
+  /*-----------------------------------------------------------------CONFIGURACAO DA NAVBAR-----------------------------------------------------------------*/
+}
+header .logo {
+  width: 10em;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+header .logo img {
+  width: 100%;
+  height: 100%;
+}
+header .hamburguer {
+  visibility: hidden;
+  opacity: 0;
+  width: 40px;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  overflow-x: hidden;
+  transition-duration: 1s;
+  margin-right: 20px;
+}
+header .hamburguer .barra {
+  display: block;
+  width: 80%;
+  height: 4px;
+  background-color: black;
+  border-radius: 20%;
+}
+header .ativo {
+  overflow-x: hidden;
+  transition-duration: 400ms;
+}
+header .ativo span:nth-child(1) {
+  width: 0%;
+  transition-duration: 1s;
+}
+header .ativo span:nth-child(2) {
+  position: absolute;
+  width: 40px;
+  top: 55px;
+  right: 30px;
+  transform: rotate(45deg);
+}
+header .ativo span:nth-child(3) {
+  position: absolute;
+  width: 40px;
+  top: 55px;
+  right: 30px;
+  transform: rotate(-45deg);
+}
+header nav {
+  width: 700px;
+}
+header nav a {
+  color: white;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+header nav a:hover {
+  color: #d60f62;
+}
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+main {
+  width: 100vw;
+  overflow-x: hidden;
+}
+main .banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 110vh;
+  padding: 0 80px;
+  background-color: #031220;
+  border-radius: 12px;
+  box-shadow: 10px 1px 40px rgba(255, 255, 255, 0.431372549);
+  overflow-x: hidden;
+}
+main .banner .texto {
+  width: 43em;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .banner .texto h1 {
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 60px;
+  background-image: linear-gradient(40deg, #da862d, #54087b);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+main .banner .texto .typer {
+  text-align: left;
+  letter-spacing: 2px;
+  font-size: 60px;
+  background-image: linear-gradient(40deg, #da862d, #54087b);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+main .banner .imagem {
+  width: 35em;
+  height: 35em;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  top: 0px;
+  animation-name: background;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+main .banner .imagem img {
+  display: block;
+  width: 85%;
+  height: 85%;
+  border-radius: 50%;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  animation-name: background;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+main .servicos {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  background-image: url("../../images/models/wave.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  box-shadow: 1px 20px 15px rgba(246, 165, 4, 0.462745098);
+}
+main .servicos .imagem {
+  width: 50em;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 28px;
+  background: linear-gradient(to bottom, rgba(140, 99, 10, 0.5450980392), rgba(198, 211, 148, 0.537254902));
+  box-shadow: 1px 20px 30px black;
+}
+main .servicos .imagem h1 {
+  width: 50%;
+  letter-spacing: 2px;
+  font-size: 28px;
+  background-image: linear-gradient(to right, rgb(77, 215, 2), white);
+  color: transparent;
+  -webkit-background-clip: text;
+  position: absolute;
+  right: 20px;
+  top: 95px;
+}
+main .servicos .imagem img {
+  display: block;
+  width: 18em;
+  height: 18em;
+  border-radius: 28px;
+  position: absolute;
+  left: 40px;
+  top: 30px;
+  box-shadow: 1px 20px 30px black;
+}
+main .servicos .imagem .imagem2 {
+  position: absolute;
+  top: 320px;
+  left: 60%;
+}
+main .servicos .imagem .empresas {
+  width: 40%;
+  left: 100px;
+  top: 420px;
+  color: black;
+}
+main .servicos .pagamentos {
+  width: 20em;
+  height: 20em;
+  border-radius: 28px;
+  box-shadow: 1px 20px 30px black;
+  overflow: hidden;
+}
+main .servicos .pagamentos a {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+main .servicos .pagamentos a::after {
+  content: "";
+  width: 150%;
+  height: 20%;
+  position: absolute;
+  left: -150%;
+  top: 30%;
+  background-color: rgba(255, 255, 255, 0.5294117647);
+  transform: skewY(45deg);
+  transition-duration: 0.8s;
+}
+main .servicos .pagamentos a:hover::after {
+  left: 100%;
+}
+main .servicos .pagamentos img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 28px;
+}
+main .servicos .app {
+  width: 20em;
+  height: 20em;
+  border-radius: 28px;
+  box-shadow: 1px 20px 30px black;
+}
+main .servicos .app a {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+main .servicos .app a::after {
+  content: "";
+  width: 150%;
+  height: 20%;
+  position: absolute;
+  left: -150%;
+  top: 30%;
+  background-color: rgba(246, 255, 0, 0.5294117647);
+  transform: skewY(45deg);
+  transition-duration: 0.8s;
+}
+main .servicos .app a:hover::after {
+  left: 100%;
+}
+main .servicos .app img {
+  display: block;
+  width: 100%;
+  border-radius: 28px;
+}
+main .formulario {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2b222c;
+  position: relative;
+}
+main .formulario .beneficions {
+  padding: 20px;
+  width: 100%;
+  height: 90%;
+  background-color: rgba(88, 48, 38, 0.5137254902);
+  border-radius: 28px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+main .formulario .beneficions .examples {
+  width: 40em;
+  height: 40em;
+  position: absolute;
+  left: 100px;
+}
+main .formulario .beneficions .examples h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #ffffff;
+  position: absolute;
+}
+main .formulario .beneficions .examples img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  border-radius: 28px;
+  box-shadow: 1px 10px 30px 10px #43223c;
+}
+main .formulario .beneficions a {
+  color: white;
+  font-size: 1.4rem;
+  line-height: 50px;
+}
+main .formulario .beneficions a:hover {
+  color: darkgreen;
+}
+main .formulario form {
+  width: 40em;
+  height: 40em;
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #383939;
+  border: 3px dashed #991818;
+  box-shadow: 1px 10px 30px black;
+  position: absolute;
+  right: 100px;
+}
+main .formulario form h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.3rem;
+  height: 50px;
+}
+main .formulario form input {
+  width: 100%;
+  margin: 0 auto;
+  height: 60px;
+  line-height: 50px;
+  border-radius: 8px;
+  background-color: rgb(98, 93, 93);
+  padding-left: 20px;
+  color: blue;
+  outline: none;
+  border: none;
+}
+main .formulario form input::-moz-placeholder {
+  color: black;
+}
+main .formulario form input::placeholder {
+  color: black;
+}
+main .formulario form input:focus {
+  background-color: gray;
+}
+main .formulario form textarea {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 8px;
+  background-color: rgb(98, 93, 93);
+  outline: none;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+main .formulario form textarea::-moz-placeholder {
+  color: black;
+}
+main .formulario form textarea::placeholder {
+  color: black;
+}
+main .formulario form textarea:focus {
+  background-color: gray;
+}
+main .formulario form label {
+  display: block;
+  height: 50px;
+  font-size: 1.2rem;
+}
+main .formulario form button {
+  width: 100%;
+  margin: 0 auto;
+  height: 60px;
+  border-radius: 12px;
+  background-color: #5b0465;
+  color: white;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+main .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5843137255);
+  position: fixed;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition-duration: 500ms;
+  pointer-events: none;
+}
+main .overlay.active {
+  visibility: visible;
+  opacity: 1;
+  cursor: pointer;
+  pointer-events: all;
+}
+main .acessar-conta {
+  visibility: hidden;
+  opacity: 0;
+  width: 25em;
+  height: 30em;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1f3142;
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  transition-duration: 400ms;
+  transition-timing-function: ease-in-out;
+}
+main .acessar-conta.active {
+  visibility: visible;
+  opacity: 1;
+  z-index: 10000;
+}
+main .acessar-conta form {
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .acessar-conta form h1 {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  position: relative;
+}
+main .acessar-conta form h1::after {
+  position: absolute;
+  content: "";
+  width: 50%;
+  border-radius: 20px;
+  height: 3px;
+  bottom: 2px;
+  left: 0%;
+  background-color: rgb(255, 247, 247);
+}
+main .acessar-conta form h1 span {
+  text-align: center;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 400ms;
+}
+main .acessar-conta form h1 span:hover {
+  background-color: red;
+}
+main .acessar-conta form a {
+  color: white;
+}
+main .acessar-conta form .btn-conta {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  cursor: pointer;
+}
+main .acessar-conta form .btn-conta:hover {
+  background-color: rgb(64, 96, 14);
+}
+main .acessar-conta form .btn-conta:active a {
+  color: #491313;
+}
+main .acessar-conta form input {
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding-left: 20px;
+  background-color: gray;
+  color: white;
+}
+
+@keyframes background {
+  0% {
+    background-color: rgba(225, 155, 4, 0.4784313725);
+    box-shadow: 1px 1px 50px rgb(197, 2, 63);
+  }
+  100% {
+    background-color: rgba(3, 18, 32, 0.6352941176);
+  }
+}
+footer {
+  width: 100%;
+  height: 300px;
+  background-color: #484450;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: white;
+  overflow-x: hidden !important;
+}
+footer .social {
+  width: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .social a:hover {
+  transition-duration: 400ms;
+  transform: scale(1.2);
+}
+footer .social a:hover .azul {
+  transition-duration: 400ms;
+  color: #00bfff;
+}
+footer .social a:hover .azulF {
+  transition-duration: 400ms;
+  color: #3b5998;
+}
+footer .social a:hover .inst {
+  color: #f32a4b;
+}
+footer .social i {
+  color: white;
+  font-size: 2.5rem;
+}
+footer .endereco {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+footer .endereco a {
+  color: white;
+  font-size: 1.7rem;
+}
+footer .endereco a i {
+  font-size: 1.7rem;
+  color: rgb(255, 128, 0);
+}
+footer .endereco a:hover {
+  transition-duration: 600ms;
+  text-decoration: underline;
+  color: green;
+}
+footer .logoRodape {
+  width: 200px;
+  box-sizing: border-box;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 80px;
+}
+footer .logoRodape img {
+  display: block;
+  width: 85%;
+  height: 80%;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+footer .direitos {
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+footer .direitos p {
+  font-size: 1.5rem;
+}
+
+/*--------------------------RESPONSIVIDADE EM TELAS----------------------------------*/
+@media only screen and (max-width: 480px) {
+  body {
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #e79128;
+    transition-duration: 1s;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  header .logo {
+    width: 30%;
+    overflow: hidden;
+  }
+  header .logo img {
+    width: 100%;
+  }
+  header .hamburguer {
+    visibility: visible;
+    opacity: 1;
+    transition-duration: 400ms;
+  }
+  header .hamburguer .barra {
+    width: 40px;
+    transition-duration: 400ms;
+  }
+  header .ativo {
+    overflow-x: hidden;
+    transition-duration: 500ms;
+  }
+  header .ativo span:nth-child(1) {
+    display: none;
+  }
+  header nav {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #3b212a;
+    left: 0;
+    top: 13vh;
+    text-align: center;
+    box-sizing: border-box;
+    transition-duration: 1s;
+  }
+  header nav a {
+    color: rgb(255, 255, 255);
+    font-size: 2.3rem;
+  }
+  header nav ul {
+    margin-top: 10%;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  header .active {
+    visibility: visible;
+    opacity: 1;
+    z-index: 10000;
+    transition-duration: 1s;
+  }
+  header .active a {
+    display: block;
+    font-size: 1.4rem;
+  }
+  main {
+    transition-duration: 1s;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  main .banner {
+    width: 100%;
+    height: 87vh !important;
+    box-shadow: none;
+    border-radius: 0;
+    height: 100vh;
+    background-color: #051d26;
+    position: relative;
+  }
+  main .banner .texto {
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+  main .banner .texto h1 {
+    width: 96%;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  main .banner .imagem {
+    position: absolute;
+    width: 90%;
+    height: 40%;
+    left: 6%;
+    top: 45%;
+  }
+  main .servicos {
+    width: 100%;
+    height: 155vh;
+  }
+  main .servicos .imagem {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 0;
+    background: rgb(6, 6, 6);
+    box-shadow: none;
+  }
+  main .servicos .imagem h1 {
+    width: 6rem;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    background-image: linear-gradient(to right, rgb(215, 194, 2), white);
+    color: transparent;
+    -webkit-background-clip: text;
+    position: absolute;
+    left: 59%;
+    top: 16px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  main .servicos .imagem img {
+    display: block;
+    width: 50%;
+    height: 45%;
+    border-radius: 12px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    box-shadow: 10px 5px 20px #034325;
+  }
+  main .servicos .imagem .imagem2 {
+    position: absolute;
+    top: 185px;
+    left: 47%;
+  }
+  main .servicos .imagem .empresas {
+    width: 8rem;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    color: rgb(244, 185, 59);
+    position: absolute;
+    left: 5px;
+    top: 205px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  main .servicos .pagamentos {
+    width: 100%;
+    height: 47vh;
+    border-radius: 12px;
+    box-shadow: 1px 20px 30px black;
+    position: relative;
+    top: 0;
+  }
+  main .servicos .pagamentos img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    margin: 0 auto;
+    display: block;
+  }
+  main .servicos .app {
+    width: 100%;
+    height: 47vh;
+    border-radius: 12px;
+    box-shadow: 1px 20px 30px black;
+    position: relative;
+    bottom: 0;
+  }
+  main .servicos .app img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    margin: 0 auto;
+    display: block;
+  }
+  main .formulario {
+    width: 100%;
+    height: 155vh;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    gap: 0;
+    background-image: url("../../images/models/bgform.png");
+    background-size: cover;
+    background-position: center;
+  }
+  main .formulario .beneficions {
+    width: 100%;
+    height: 380px;
+    padding: 20px;
+    background-color: black;
+    border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  main .formulario .beneficions .examples {
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+  main .formulario .beneficions .examples h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #ffffff;
+    position: absolute;
+  }
+  main .formulario .beneficions .examples img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 28px;
+    box-shadow: none;
+  }
+  main .formulario .beneficions a {
+    color: white;
+    font-size: 1.4rem;
+    line-height: 50px;
+  }
+  main .formulario .beneficions a:hover {
+    color: darkgreen;
+  }
+  main .formulario form {
+    width: 100%;
+    height: 530px;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #383939;
+    border: none;
+    position: relative;
+    top: 15px;
+    left: 0;
+  }
+  main .formulario form h1 {
+    width: 100%;
+    font-size: 1.4em;
+    text-align: center;
+  }
+  main .formulario form input {
+    width: 100%;
+    margin: 0 auto;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 8px;
+    background-color: rgb(98, 93, 93);
+    padding-left: 20px;
+    outline: none;
+    border: none;
+  }
+  main .formulario form input::-moz-placeholder {
+    color: black;
+  }
+  main .formulario form input::placeholder {
+    color: black;
+  }
+  main .formulario form input:focus {
+    background-color: gray;
+  }
+  main .formulario form textarea {
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 8px;
+    background-color: rgb(98, 93, 93);
+    outline: none;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+  main .formulario form textarea::-moz-placeholder {
+    color: black;
+  }
+  main .formulario form textarea::placeholder {
+    color: black;
+  }
+  main .formulario form textarea:focus {
+    background-color: gray;
+  }
+  main .formulario form label {
+    display: block;
+    font-size: 1.2rem;
+  }
+  main .formulario form button {
+    width: 95%;
+    margin: 0 auto;
+    height: 50px;
+    border-radius: 12px;
+    background-color: #5b0465;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  main .acessar-conta {
+    width: 100%;
+    height: 75vh;
+  }
+  main .acessar-conta form {
+    width: 100%;
+  }
+  main .acessar-conta form input {
+    height: 30px;
+  }
+  main .acessar-conta form label {
+    font-size: 0.5rem;
+  }
+  main .acessar-conta form label i {
+    font-size: 0.5rem;
+  }
+  footer {
+    max-width: 100vw;
+    box-sizing: border-box;
+    height: 400px;
+    position: relative;
+    overflow-x: hidden;
+  }
+  footer .social {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 155px;
+  }
+  footer .social a:hover {
+    transition-duration: 400ms;
+    transform: scale(1.6);
+  }
+  footer .social a:hover .azul {
+    transition-duration: 400ms;
+    color: #00bfff;
+  }
+  footer .social a:hover .azulF {
+    transition-duration: 400ms;
+    color: #3b5998;
+  }
+  footer .social a:hover .inst {
+    color: #f32a4b;
+  }
+  footer .social a i {
+    color: white;
+    font-size: 1.9rem;
+  }
+  footer .endereco {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  footer .endereco a {
+    color: white;
+    font-size: 1.2rem;
+  }
+  footer .endereco a i {
+    font-size: 1.2rem;
+    color: rgb(255, 128, 0);
+  }
+  footer .endereco a:hover {
+    transition-duration: 600ms;
+    text-decoration: underline;
+    color: green;
+  }
+  footer .logoRodape {
+    width: 100%;
+    box-sizing: border-box;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+    left: 10px;
+  }
+  footer .logoRodape img {
+    position: absolute;
+    display: block;
+    width: 40%;
+    height: 90%;
+    border-radius: 50%;
+    top: 0px;
+    margin: 10px auto;
+  }
+  footer .direitos {
+    width: 80%;
+    text-align: center;
+    display: block;
+    border: none;
+  }
+  footer .direitos p {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #e79128;
+    transition-duration: 1s;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  header .logo {
+    width: 7em;
+  }
+  header .hamburguer {
+    visibility: visible;
+    opacity: 1;
+    transition-duration: 500ms;
+    z-index: 10000;
+  }
+  header .hamburguer .barra {
+    width: 35px;
+    transition-duration: 500ms;
+  }
+  header nav {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    padding: 0;
+    width: 0%;
+    height: 100vh;
+    background-color: #dca443;
+    right: 0;
+    top: 13vh;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    transition-duration: 500ms;
+  }
+  header nav a {
+    color: black;
+    font-size: 1.6rem;
+  }
+  header nav ul {
+    margin-top: 10%;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  header .active {
+    width: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition-duration: 500ms;
+    z-index: 10000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  header .active a {
+    font-size: 1.4rem;
+  }
+  header .ativo {
+    overflow-x: hidden;
+    transition-duration: 500ms;
+  }
+  header .ativo span:nth-child(1) {
+    display: none;
+  }
+  header .ativo span:nth-child(2) {
+    position: absolute;
+    width: 40px;
+    top: 50px;
+    right: 40px;
+    transform: rotate(45deg);
+    transition-duration: 500ms;
+  }
+  header .ativo span:nth-child(3) {
+    position: absolute;
+    width: 40px;
+    top: 50px;
+    right: 40px;
+    transform: rotate(-45deg);
+    transition-duration: 500ms;
+  }
+  main .banner {
+    width: 100%;
+    height: 90vh;
+  }
+  main .banner .texto {
+    width: 40%;
+  }
+  main .banner .texto h1 {
+    font-size: 1.7rem;
+  }
+  main .banner .imagem {
+    width: 55%;
+    height: 45%;
+  }
+  main .servicos {
+    position: relative;
+    justify-content: left;
+  }
+  main .servicos .imagem {
+    width: 55%;
+    height: 70%;
+    left: 0;
+  }
+  main .servicos .imagem h1 {
+    top: 6.5%;
+    right: 20px;
+    font-size: 1.2rem;
+  }
+  main .servicos .imagem .empresas {
+    top: 54%;
+    left: 10%;
+  }
+  main .servicos .imagem img {
+    width: 11em;
+    height: 11em;
+    left: 0;
+  }
+  main .servicos .imagem .imagem2 {
+    left: 50%;
+  }
+  main .servicos .pagamentos {
+    width: 40%;
+    height: 35%;
+    position: absolute;
+    top: 12%;
+    right: 0em;
+  }
+  main .servicos .app {
+    width: 40%;
+    height: 35%;
+    position: absolute;
+    bottom: 12%;
+    right: 0%;
+  }
+  main .formulario .beneficions .examples {
+    width: 45%;
+    height: 25em;
+    left: 2%;
+  }
+  main .formulario form {
+    width: 45%;
+    height: 25em;
+    right: 2%;
+  }
+  main .formulario form h1 {
+    font-size: 0.8rem;
+  }
+  main .formulario form label {
+    font-size: 0.8rem;
+  }
+  footer {
+    max-width: 100vw;
+    box-sizing: border-box;
+    height: 500px;
+    position: relative;
+    overflow-x: hidden;
+  }
+  footer .social {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 160px;
+  }
+  footer .social a:hover {
+    transition-duration: 400ms;
+    transform: scale(1.3);
+  }
+  footer .social a:hover .azul {
+    transition-duration: 400ms;
+    color: #00bfff;
+  }
+  footer .social a:hover .azulF {
+    transition-duration: 400ms;
+    color: #3b5998;
+  }
+  footer .social a:hover .inst {
+    color: #f32a4b;
+  }
+  footer .social a i {
+    color: white;
+    font-size: 2rem;
+  }
+  footer .endereco {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  footer .endereco a {
+    color: white;
+    font-size: 1.5rem;
+  }
+  footer .endereco a i {
+    font-size: 1.5rem;
+    color: rgb(255, 128, 0);
+  }
+  footer .endereco a:hover {
+    transition-duration: 600ms;
+    text-decoration: underline;
+    color: green;
+  }
+  footer .logoRodape {
+    width: 50%;
+    box-sizing: border-box;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+  }
+  footer .logoRodape img {
+    position: absolute;
+    display: block;
+    width: 35%;
+    height: 90%;
+    border-radius: 50%;
+    top: 0px;
+    margin: 10px auto;
+  }
+  footer .direitos {
+    width: 80%;
+    text-align: center;
+    display: block;
+    border: none;
+  }
+  footer .direitos p {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1300px) {
+  header {
+    width: 100vw;
+    height: 13vh;
+    background: linear-gradient(to right, #ff914c, #e79128);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 2em;
+    /*-----------------------------------------------------------------CONFIGURACAO DA NAVBAR-----------------------------------------------------------------*/
+  }
+  header .logo {
+    width: 9em;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  header nav {
+    width: 50%;
+  }
+  header nav a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  header nav a:hover {
+    color: #d60f62;
+  }
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  main .banner {
+    width: 100%;
+    max-height: 100vh;
+  }
+  main .banner .texto {
+    width: 45%;
+  }
+  main .banner .texto h1 {
+    font-size: 2.3rem;
+  }
+  main .banner .imagem {
+    width: 50%;
+    height: 30em;
+  }
+  main .servicos {
+    position: relative;
+    justify-content: left;
+  }
+  main .servicos .imagem {
+    width: 40em;
+  }
+  main .servicos .imagem h1 {
+    top: 10%;
+  }
+  main .servicos .imagem .empresas {
+    top: 58%;
+  }
+  main .servicos .imagem img {
+    width: 14em;
+    height: 14em;
+  }
+  main .servicos .pagamentos {
+    width: 17em;
+    height: 17em;
+    position: absolute;
+    top: 3%;
+    right: 5em;
+  }
+  main .servicos .app {
+    width: 17em;
+    height: 17em;
+    position: absolute;
+    top: 52%;
+    right: 5em;
+  }
+  main .formulario .beneficions .examples {
+    width: 40%;
+    height: 80%;
+    left: 5%;
+  }
+  main .formulario form {
+    width: 40%;
+    height: 80%;
+    right: 5%;
+  }
+}
+@media only screen and (min-width: 1301px) {
+  header {
+    width: 100vw;
+    height: 13vh;
+    background: linear-gradient(to right, #ff914c, #e79128);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 3em;
+  }
+  header .logo {
+    width: 9em;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  header nav {
+    width: 40%;
+  }
+  header nav a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  header nav a:hover {
+    color: #d60f62;
+  }
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  main .banner {
+    width: 100%;
+    max-height: 100vh;
+  }
+  main .banner .texto {
+    width: 45%;
+  }
+  main .banner .texto h1 {
+    font-size: 2.3rem;
+  }
+  main .banner .imagem {
+    width: 35%;
+    height: 60%;
+  }
+  main .servicos {
+    position: relative;
+    justify-content: left;
+  }
+  main .servicos .imagem {
+    width: 35%;
+    height: 70%;
+  }
+  main .servicos .imagem h1 {
+    width: 40%;
+    right: 0px;
+    top: 10%;
+    font-size: 1.3rem;
+  }
+  main .servicos .imagem .empresas {
+    top: 58%;
+    left: 10%;
+  }
+  main .servicos .imagem img {
+    width: 15em;
+    height: 14em;
+    left: 10px;
+  }
+  main .servicos .imagem .imagem2 {
+    left: 50%;
+  }
+  main .servicos .pagamentos {
+    margin-left: 2em;
+    width: 30%;
+    height: 60%;
+  }
+  main .servicos .app {
+    margin-left: 1.5em;
+    width: 30%;
+    height: 60%;
+  }
+  main .formulario .beneficions .examples {
+    width: 34em;
+    height: 40em;
+    left: 20%;
+  }
+  main .formulario form {
+    width: 34em;
+    height: 40em;
+    right: 15%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-size: 1rem;
+  font-family: "Lora", serif;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+}/*# sourceMappingURL=style.css.map */

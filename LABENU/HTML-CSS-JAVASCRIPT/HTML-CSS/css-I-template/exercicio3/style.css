@@ -1,0 +1,29 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family:  Helvetica, Arial, sans-serif;
+}
+
+main{
+  
+}
+
+section{
+  float: left;
+/*float é uma propriedade que permite deixar elementos à direita ou à esquerda da tela. Não costuma ser usado. Aqui, é usado apenas para ilustrar diferenças.*/
+padding: 4%;  
+width: 60vw;
+}
+
+aside{
+  float:right;
+ /*float é uma propriedade que permite deixar elementos à direita ou à esquerda da tela. Não costuma ser usado. Aqui, é usado apenas para ilustrar diferenças.*/
+ padding: 2%; 
+ width: 25vw;
+}
+
+article{
+  margin: 10px 0;
+  background-color: cadetblue;
+  height: 25vh;
+}

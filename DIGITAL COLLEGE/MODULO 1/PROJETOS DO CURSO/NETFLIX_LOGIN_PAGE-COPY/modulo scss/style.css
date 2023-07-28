@@ -1,0 +1,1099 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Netflix Bebas";
+  src: url("ultilites/fonts/NetflixSans-Regular.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-size: 1rem;
+  font-family: "Netflix Bebas", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: black url("../images/bg body atual.jpg");
+  overflow-X: hidden;
+  background-size: auto;
+}
+
+header {
+  width: 100vw;
+  height: 9vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7058823529), rgba(0, 0, 0, 0.537254902));
+  display: flex;
+  padding: 15px 0 0 55px;
+}
+header .logo {
+  width: 8.8vw;
+  height: 6.3vh;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+header .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100vw;
+  height: 75vh;
+  background-color: rgba(0, 0, 0, 0.6509803922);
+  display: flex;
+  justify-content: center;
+}
+main .container-main {
+  margin: 0;
+  height: 660px;
+  width: 460px;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  padding: 60px 70px 40px;
+  border-radius: 4px;
+}
+main .container-main h3 {
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+main .container-main .form-floating {
+  margin: 0 auto;
+  width: 100%;
+  color: white !important;
+}
+main .container-main .form-floating .form-control {
+  background-color: #333;
+  border: none;
+  color: white !important;
+}
+main .container-main .form-floating .form-control:focus {
+  background-color: #454545;
+  box-shadow: none;
+  color: white !important;
+}
+main .container-main .form-floating label {
+  color: #8c8c8c !important;
+  background: transparent !important;
+}
+main .container-main .form-floating label::after {
+  background-color: transparent !important;
+}
+main .container-main .erro-email,
+main .container-main .erro-senha {
+  color: #e87c03;
+  width: 80%;
+  height: 28px;
+  padding: 0 20px;
+  display: none;
+}
+main .container-main .erro-email p,
+main .container-main .erro-senha p {
+  font-size: 0.8rem;
+}
+main .container-main .erro-senha {
+  margin-top: 5px;
+  padding: 0 20px;
+}
+main .container-main button {
+  line-height: 50px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 24px auto 12px;
+  background-color: rgb(235, 37, 37);
+  color: white;
+}
+main .container-main .ajuda {
+  margin: 0 auto;
+  width: 90%;
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  padding: 0 20px;
+}
+main .container-main .ajuda .input {
+  display: flex;
+  align-items: center;
+  color: #b3b3b3;
+  position: relative;
+  top: -5px;
+  left: -34px;
+}
+main .container-main .ajuda .input label {
+  font-size: 0.8rem;
+  position: relative;
+  left: 1px;
+  top: 1px;
+}
+main .container-main .ajuda .input input {
+  width: 19px;
+  height: 19px;
+  border-radius: 8px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+main .container-main .ajuda .input .checked {
+  visibility: visible;
+  position: absolute;
+  transition-duration: 0.3s;
+  width: 12px;
+  height: 8px;
+  z-index: 1;
+  top: 4px;
+  left: 2px;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
+  transform: rotate(-50deg);
+}
+main .container-main .ajuda .input .estilo {
+  width: 15px;
+  height: 15px;
+  background-color: #8c8c8c;
+  border-radius: 2px;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  z-index: 0;
+}
+main .container-main .ajuda a {
+  text-decoration: none;
+  color: #b3b3b3;
+  font-size: 0.8rem;
+  position: relative;
+  top: -5px;
+  right: -34px;
+}
+main .container-main .ajuda a:hover {
+  text-decoration: underline;
+}
+main .container-main .conteudo-extra {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100px;
+  top: 85px;
+  color: #8c8c8c;
+  font-size: 1rem;
+  text-align: left;
+}
+main .container-main .conteudo-extra a {
+  font-size: 1em;
+}
+main .container-main .conteudo-extra a:hover {
+  text-decoration: underline;
+}
+main .container-main .conteudo-extra p {
+  display: block;
+  font-size: 0.8em;
+}
+main .container-main .conteudo-extra p:nth-child(1) {
+  font-size: 1rem;
+  margin-bottom: -20px;
+}
+main .container-main .conteudo-extra p:nth-child(1) a {
+  color: white;
+  font-size: 1rem;
+}
+main .container-main .conteudo-extra p a {
+  font-size: 12px;
+  color: blue;
+  text-decoration: none;
+  font-weight: 0;
+}
+main .container-main .conteudo-extra .oculto {
+  display: none;
+}
+
+footer {
+  width: 100%;
+  padding: 40px 0 0 25px;
+  height: 268px;
+  background: rgba(0, 0, 0, 0.8784313725);
+  font-size: 2rem !important;
+  position: relative;
+}
+footer a {
+  color: #626161 !important;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem !important;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer .duvidas {
+  margin: 0 auto;
+  width: 55%;
+  height: 20px;
+  top: -1px;
+  left: 3px;
+  line-height: 30px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: #626161;
+  position: relative;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+footer .listas {
+  width: 60%;
+  height: 60px;
+  margin: 60px auto;
+  display: flex;
+  flex-wrap: wrap;
+  color: #8c8c8c;
+  margin: 20px auto;
+  box-sizing: border-box;
+  padding: 5px 3px;
+}
+footer .listas ul {
+  width: 20%;
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  box-sizing: border-box;
+  text-align: left;
+  margin-right: 25px;
+  position: relative;
+}
+footer .listas ul li {
+  position: absolute;
+  left: 0;
+  top: -9px;
+  left: 45px;
+  width: 220px;
+  height: 20px;
+}
+footer .listas ul li:nth-child(2) {
+  top: 23px;
+}
+footer .listas ul li a {
+  font-size: 13px !important;
+  color: #8c8c8c;
+}
+footer .select {
+  width: 72%;
+  margin: 0 auto;
+  height: 60px;
+  position: absolute;
+  left: 455px;
+  top: 170px;
+}
+footer .select select {
+  position: relative;
+  width: 140px;
+  height: 47px;
+  text-align: right !important;
+  background-color: rgba(0, 0, 0, 0.5843137255);
+  color: #626161;
+  line-height: 1.7;
+  padding-right: 15px;
+  font-size: 0.8rem;
+  border: 1px solid #3e3e3e;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+footer .select select:focus {
+  outline: none !important;
+  text-align: center !important;
+  border: 1px solid #8c8c8c;
+  padding-left: 30px;
+}
+footer .select select option {
+  background-color: black;
+}
+footer .select::before {
+  content: "🌐";
+  position: absolute;
+  width: 20px;
+  height: 27px;
+  left: 12px;
+  top: 12px;
+  z-index: 1;
+}
+
+/*--------------------------RESPONSIVIDADE GERAL----------------------------------*/
+@media (min-width: 320px) and (max-width: 550px) {
+  body {
+    overflow-x: hidden;
+  }
+  header {
+    width: 100%;
+    height: 78px;
+    background: black;
+    display: flex;
+    padding: 15px 0 0 55px;
+    overflow: hidden;
+  }
+  header .logo {
+    width: 142px;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -45px;
+    top: -15px;
+  }
+  header .logo img {
+    width: 53%;
+    height: 100%;
+  }
+  main {
+    width: 100vw;
+    height: 900px;
+    overflow: hidden;
+    background-color: black;
+  }
+  main .container-main {
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+    height: 100%;
+  }
+  main .container-main .conteudo-extra {
+    top: 25px;
+  }
+  footer {
+    border-top: 2px solid #8c8c8c;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background-color: black;
+  }
+  footer .duvidas {
+    width: 100%;
+    font-size: 1em;
+    left: -2px;
+    top: -5px;
+  }
+  footer .duvidas p {
+    font-size: 0.5em;
+  }
+  footer .duvidas a {
+    font-size: 0.2em;
+  }
+  footer .listas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  footer .listas #col-1 {
+    left: -130px;
+    top: 0px;
+  }
+  footer .listas #col-1 li:nth-child(2) {
+    top: 50px;
+  }
+  footer .listas #col-2 {
+    position: absolute;
+    right: 150px;
+  }
+  footer .listas #col-2 a {
+    font-size: 1rem;
+  }
+  footer .listas #col-2 li:nth-child(2) {
+    top: 50px;
+  }
+  footer .listas #col-3 {
+    width: 190px;
+    position: absolute;
+    left: -10px;
+    top: 105px;
+  }
+  footer .listas #col-3 a {
+    font-size: 1rem;
+  }
+  footer .listas #col-3 li {
+    top: 0;
+    right: -50px;
+  }
+  footer .listas #col-4 {
+    width: 190px;
+    position: absolute;
+    right: 0px !important;
+    top: 105px;
+    border: 1px solid gray;
+  }
+  footer .listas #col-4 a {
+    font-size: 1rem;
+  }
+  footer .listas #col-4 li {
+    top: 0;
+    right: -20px;
+  }
+  footer .select {
+    left: 20px;
+    top: 70%;
+  }
+}
+@media (min-width: 551px) and (max-width: 740px) {
+  /* tablets */
+  body {
+    overflow-x: hidden;
+  }
+  header {
+    width: 100%;
+    height: 90px;
+    background: black;
+    display: flex;
+    padding: 15px 0 0 55px;
+    overflow: hidden;
+  }
+  header .logo {
+    width: 25%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -38px;
+    top: -9px;
+  }
+  header .logo img {
+    width: 100%;
+    height: 100%;
+  }
+  main {
+    width: 100vw;
+    height: 900px;
+    overflow: hidden;
+    background-color: black;
+    padding: 20px 10px 0 10px;
+  }
+  main .container-main {
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+    height: 100%;
+  }
+  main .container-main .conteudo-extra {
+    top: 25px;
+  }
+  footer {
+    border-top: 2px solid #8c8c8c;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+  }
+  footer .duvidas {
+    width: 100%;
+    font-size: 1em;
+    left: -2px;
+    top: -5px;
+  }
+  footer .duvidas p {
+    font-size: 0.5em;
+  }
+  footer .duvidas a {
+    font-size: 0.2em;
+  }
+  footer .col-4 {
+    left: -150px;
+    border: 1px solid gray;
+  }
+  footer .select {
+    left: 40px;
+    top: 63%;
+  }
+}
+/*--------------------------------------------------------------------------------*/
+/*--------------------------SOMENTE TELAS-----------------------------------------*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* celulares */
+  body {
+    overflow-x: hidden;
+  }
+  header {
+    width: 100%;
+    height: 78px;
+    background: black;
+    display: flex;
+    padding: 15px 0 0 55px;
+    overflow: hidden;
+  }
+  header .logo {
+    width: 142px;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -45px;
+    top: -15px;
+  }
+  header .logo img {
+    width: 53%;
+    height: 100%;
+  }
+  main {
+    width: 100vw;
+    height: 60vh;
+    overflow: hidden;
+    background-color: black;
+  }
+  main .container-main {
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+    height: 100%;
+  }
+  main .container-main .conteudo-extra {
+    top: 25px;
+  }
+  footer {
+    border-top: 2px solid #8c8c8c;
+    width: 100%;
+    height: 31vh;
+    overflow: hidden;
+    background-color: black;
+  }
+  footer .duvidas {
+    width: 100%;
+    font-size: 1em;
+    left: -2px;
+    top: -5px;
+  }
+  footer .duvidas p {
+    font-size: 0.5em;
+  }
+  footer .duvidas a {
+    font-size: 0.2em;
+  }
+  footer .listas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  footer .listas #col-1 {
+    left: -130px;
+    top: 0px;
+  }
+  footer .listas #col-1 li:nth-child(2) {
+    top: 50px;
+  }
+  footer .listas #col-2 {
+    position: absolute;
+    right: 150px;
+  }
+  footer .listas #col-2 a {
+    font-size: 1rem;
+  }
+  footer .listas #col-2 li:nth-child(2) {
+    top: 50px;
+  }
+  footer .listas #col-3 {
+    width: 190px;
+    position: absolute;
+    left: -20px;
+    top: 105px;
+  }
+  footer .listas #col-3 a {
+    font-size: 1rem;
+  }
+  footer .listas #col-3 li {
+    top: 0;
+    right: -20px;
+  }
+  footer .listas #col-4 {
+    width: 190px;
+    position: absolute;
+    right: 49px;
+    top: 105px;
+  }
+  footer .listas #col-4 a {
+    font-size: 1rem;
+  }
+  footer .listas #col-4 li {
+    top: 0;
+    right: -20px;
+  }
+  footer .select {
+    left: 20px;
+    top: 70%;
+  }
+}
+@media only screen and (min-device-width: 390px) and (max-device-width: 844px) {
+  body {
+    overflow-x: hidden;
+  }
+  header {
+    width: 100%;
+    height: 78px;
+    background: black;
+    display: flex;
+    padding: 15px 0 0 55px;
+    overflow: hidden;
+  }
+  header .logo {
+    width: 142px;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -45px;
+    top: -15px;
+  }
+  header .logo img {
+    width: 53%;
+    height: 100%;
+  }
+  main {
+    width: 100vw;
+    height: 520px;
+    overflow: hidden;
+    background-color: black;
+  }
+  main .container-main {
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+    height: 100%;
+  }
+  main .container-main .conteudo-extra {
+    top: 25px;
+  }
+  footer {
+    border-top: 2px solid #8c8c8c;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-color: black;
+  }
+  footer .duvidas {
+    width: 100%;
+    font-size: 1em;
+    left: -2px;
+    top: -5px;
+  }
+  footer .duvidas p {
+    font-size: 0.5em;
+  }
+  footer .duvidas a {
+    font-size: 0.2em;
+  }
+  footer .listas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  footer .listas #col-1 {
+    left: -130px;
+    top: 0px;
+  }
+  footer .listas #col-1 li:nth-child(2) {
+    top: 50px;
+  }
+  footer .listas #col-2 {
+    position: absolute;
+    right: 150px;
+  }
+  footer .listas #col-2 a {
+    font-size: 1rem;
+  }
+  footer .listas #col-2 li:nth-child(2) {
+    top: 50px;
+  }
+  footer .listas #col-3 {
+    width: 190px;
+    position: absolute;
+    left: -20px;
+    top: 105px;
+  }
+  footer .listas #col-3 a {
+    font-size: 1rem;
+  }
+  footer .listas #col-3 li {
+    top: 0;
+    right: -20px;
+  }
+  footer .listas #col-4 {
+    width: 190px;
+    position: absolute;
+    right: 49px;
+    top: 105px;
+  }
+  footer .listas #col-4 a {
+    font-size: 1rem;
+  }
+  footer .listas #col-4 li {
+    top: 0;
+    right: -20px;
+  }
+  footer .select {
+    left: 20px;
+    top: 70%;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  body {
+    overflow-x: hidden;
+  }
+  header {
+    width: 100%;
+    height: 78px;
+    background: black;
+    display: flex;
+    padding: 15px 0 0 55px;
+    overflow: hidden;
+  }
+  header .logo {
+    width: 142px;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -45px;
+    top: -15px;
+  }
+  header .logo img {
+    width: 53%;
+    height: 100%;
+  }
+  main {
+    width: 100vw;
+    height: 79vh;
+    overflow: hidden;
+    background-color: black;
+  }
+  main .container-main {
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+    height: 100%;
+  }
+  main .container-main .conteudo-extra {
+    top: 25px;
+  }
+  footer {
+    border-top: 2px solid #8c8c8c;
+    width: 100%;
+    height: 45vh;
+    overflow: hidden;
+    background-color: black;
+  }
+  footer .duvidas {
+    width: 100%;
+    font-size: 1em;
+    left: -2px;
+    top: -5px;
+  }
+  footer .duvidas p {
+    font-size: 0.5em;
+  }
+  footer .duvidas a {
+    font-size: 0.2em;
+  }
+  footer .listas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    top: -20px;
+  }
+  footer .listas #col-1 {
+    left: -125px;
+    top: 0px;
+  }
+  footer .listas #col-1 li:nth-child(2) {
+    top: 50px;
+  }
+  footer .listas #col-2 {
+    position: absolute;
+    right: 130px;
+  }
+  footer .listas #col-2 a {
+    font-size: 1rem;
+  }
+  footer .listas #col-2 li:nth-child(2) {
+    top: 50px;
+  }
+  footer .listas #col-3 {
+    width: 190px;
+    position: absolute;
+    left: -27px;
+    top: 105px;
+  }
+  footer .listas #col-3 a {
+    font-size: 1rem;
+  }
+  footer .listas #col-3 li {
+    top: 0;
+    right: 0px;
+  }
+  footer .listas #col-4 {
+    width: 190px;
+    position: absolute;
+    right: 15px;
+    top: 105px;
+  }
+  footer .listas #col-4 a {
+    font-size: 1rem;
+  }
+  footer .listas #col-4 li {
+    top: 0;
+    right: 20px;
+  }
+  footer .select {
+    left: 20px;
+    top: 67%;
+  }
+}
+/*--------------------------------------------------------------------------------*/
+@media only screen and (min-device-width: 360px) and (max-device-width: 740px) {
+  body {
+    overflow-x: hidden;
+  }
+  header {
+    width: 100%;
+    height: 78px;
+    background: black;
+    display: flex;
+    padding: 15px 0 0 55px;
+    overflow: hidden;
+  }
+  header .logo {
+    width: 142px;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -45px;
+    top: -15px;
+  }
+  header .logo img {
+    width: 53%;
+    height: 100%;
+  }
+  main {
+    width: 100vw;
+    height: 520px;
+    overflow: hidden;
+    background-color: black;
+  }
+  main .container-main {
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+    padding-bottom: 10px;
+    height: 100%;
+  }
+  main .container-main .conteudo-extra {
+    top: 16px;
+  }
+  footer {
+    border-top: 1px solid #8c8c8c;
+    width: 100%;
+    height: 312px;
+    overflow: hidden;
+    background-color: black;
+  }
+  footer .duvidas {
+    width: 100%;
+    font-size: 1em;
+    left: -2px;
+    top: -5px;
+  }
+  footer .duvidas p {
+    font-size: 0.5em;
+  }
+  footer .duvidas a {
+    font-size: 0.2em;
+  }
+  footer .listas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9px;
+  }
+  footer .listas #col-1 {
+    left: -120px;
+    top: 0px;
+  }
+  footer .listas #col-1 li:nth-child(2) {
+    top: 55px;
+    left: 42px;
+  }
+  footer .listas #col-2 {
+    position: absolute;
+    width: 40px;
+    right: 160px;
+  }
+  footer .listas #col-2 a {
+    font-size: 1rem;
+  }
+  footer .listas #col-2 li {
+    width: 100px;
+    line-height: 15px;
+    top: -5px;
+  }
+  footer .listas #col-2 li:nth-child(2) {
+    top: 60px;
+    width: 100px;
+  }
+  footer .listas #col-3 {
+    width: 160px;
+    position: absolute;
+    left: -26px;
+    top: 105px;
+  }
+  footer .listas #col-3 a {
+    font-size: 1rem;
+  }
+  footer .listas #col-3 li {
+    top: 3px;
+    right: -20px;
+  }
+  footer .listas #col-4 {
+    width: 140px;
+    position: absolute;
+    right: 60px;
+    top: 108px;
+  }
+  footer .listas #col-4 a {
+    font-size: 1rem;
+  }
+  footer .listas #col-4 li {
+    top: 0;
+    right: -20px;
+  }
+  footer .select {
+    left: 20px;
+    top: 69%;
+  }
+}
+/*--------------------------------------------------------------------------------*/
+@media only screen and (min-device-width: 280px) and (max-device-width: 653px) {
+  body {
+    overflow-x: hidden;
+  }
+  header {
+    width: 100%;
+    height: 78px;
+    background: black;
+    display: flex;
+    padding: 15px 0 0 55px;
+    overflow: hidden;
+  }
+  header .logo {
+    width: 142px;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -45px;
+    top: -15px;
+  }
+  header .logo img {
+    width: 53%;
+    height: 100%;
+  }
+  main {
+    width: 100vw;
+    height: 520px;
+    overflow: hidden;
+    background-color: black;
+  }
+  main .container-main {
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+    height: 100%;
+  }
+  main .container-main .conteudo-extra {
+    top: 25px;
+  }
+  footer {
+    border-top: 2px solid #8c8c8c;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-color: black;
+  }
+  footer .duvidas {
+    width: 100%;
+    font-size: 1em;
+    left: -2px;
+    top: -5px;
+  }
+  footer .duvidas p {
+    font-size: 0.5em;
+  }
+  footer .duvidas a {
+    font-size: 0.2em;
+  }
+  footer .listas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  footer .listas #col-1 {
+    left: -130px;
+    top: 0px;
+  }
+  footer .listas #col-1 li:nth-child(2) {
+    top: 50px;
+  }
+  footer .listas #col-2 {
+    position: absolute;
+    right: 150px;
+  }
+  footer .listas #col-2 a {
+    font-size: 1rem;
+  }
+  footer .listas #col-2 li:nth-child(2) {
+    top: 50px;
+  }
+  footer .listas #col-3 {
+    width: 190px;
+    position: absolute;
+    left: -20px;
+    top: 105px;
+  }
+  footer .listas #col-3 a {
+    font-size: 1rem;
+  }
+  footer .listas #col-3 li {
+    top: 0;
+    right: -20px;
+  }
+  footer .listas #col-4 {
+    width: 190px;
+    position: absolute;
+    right: 49px;
+    top: 105px;
+  }
+  footer .listas #col-4 a {
+    font-size: 1rem;
+  }
+  footer .listas #col-4 li {
+    top: 0;
+    right: -20px;
+  }
+  footer .select {
+    left: 20px;
+    top: 70%;
+  }
+}
+/*--------------------------------------------------------------------------------*/
+@media only screen and (min-device-width: 481px) and (max-device-width: 900px) {
+  /* tablets */
+}
+/*--------------------------------------------------------------------------------*/
+/*******************************************//*# sourceMappingURL=style.css.map */

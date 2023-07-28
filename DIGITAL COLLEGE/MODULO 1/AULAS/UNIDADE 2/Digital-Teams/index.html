@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=,, initial-scale=1.0">
+    <!--ESPAÇO PARA IMPORTS-->
+
+    <!--ESPAÇO PARA CSS-->
+    <link rel="stylesheet" href="modulo scss/style.css">
+    <title>Digital Teams</title>
+</head>
+<body>
+    
+
+  <header>
+    <div class="logo">
+        <img src="images/logo.webp" alt="Logo da Digital Teams">
+    </div>
+    <div class="busca">
+        <input type="text" id="pesquisar" placeholder="Digite o nome do time">
+        <box-icon name='search-alt'></box-icon>
+    </div>
+</header>
+
+<main>
+    <section id="teams">
+        <h3>
+            Teams 
+            <button id="novoTime" onclick="abrirForm()" class="btn mini-title">
+                <box-icon name='plus'></box-icon> Novo Team
+            </button>
+        </h3>
+        <ul id="listaDeTeams">
+        
+        </ul>
+    </section>
+
+    <section id="overlay" onclick="fecharForm()"></section>
+
+    <section id="formCriar" class="modal">
+        <form id="fc" onsubmit="adicionarTeam()">
+            <h3>Criar <box-icon onclick="fecharForm()" id="fecharFormCriar" name="x"></box-icon></h3>
+            <label class="mini-title" for="teamNome">Nome</label>
+            <input type="text" name="teamNome" id="teamNome" required placeholder="Digite o nome do team">
+            <label class="mini-title" for="teamQtd">N° de participantes</label>
+            <input type="number" name="teamQtd" id="teamQtd" min="0" required>
+            <button id="btn" type="submit" class="btn mini-title">Salvar</button>
+        </form>
+    </section>
+
+    <section id="mostrarParticipantes" class="modal">
+        <h3>Participantes <box-icon id="fecharParticipante" name="x" onclick="fecharForm()"></box-icon> </h3>
+        <ul id="listaDeParticipantes">
+            
+        </ul>
+    </section>
+
+    <section id="criarParticipante" class="modal">
+        <h3>Criar <box-icon id="fecharFormParticipante" name="x" onclick="fecharFormParticipantes()"></box-icon></h3>
+        <form id="add" onsubmit="adicionarParticipante()">
+            <input type="hidden" id="teamId">
+            <label class="mini-title" for="teamNome">Nome</label>
+            <input type="text" name="teamNome" id="nomeParticipante" required placeholder="Digite o nome do team">
+            <button id="btn" type="submit" class="btn mini-title">Salvar</button>
+        </form>
+    </section>
+</main>
+
+
+
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script src="script/index.js"></script>  <!--JAVASCRIPT-->
+</body>
+</html>

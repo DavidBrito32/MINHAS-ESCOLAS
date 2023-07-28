@@ -1,0 +1,10 @@
+Novo exercicio para adicionar mais um arquivo. 
+
+teste teste teste..
+
+Aqui neste commit estou utilizando o vim para editar via terminal o arquivo
+
+
+vou realizar meu primeiro commit utilizando somente o terminal do vim.
+
+	apos isso irei realizar um checkout?
