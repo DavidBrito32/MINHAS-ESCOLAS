@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=,, initial-scale=1.0">
-    <!--ESPAÇO PARA IMPORTS-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--ESPAÇO PARA CSS-->
-    <link rel="stylesheet" href="modulo scss/style.css">
-    <title>Aula 2</title>
+  <link rel="stylesheet" href="modulo scss/style.css">
+  <title>Aula 02</title>
 </head>
 <body>
 
-  <select id="dia">
-  </select>
+  <div id="container">
+    <h1>
+      <span id="hora">00</span>:
+      <span id="minutos">00</span>:
+      <span id="segundos">00</span>
+    </h1>
+    <button id="acao" estado="i">Iniciar</button>
+    <div class="setup">
+      <input type="number" id="pomodoroTime" min="0" placeholder="Pomodoro">
+      <input type="number" id="shortPauseTime" min="0" placeholder="Descanso Curto">
+      <input type="number" id="longPauseTime" min="0" placeholder="Descanso Longo">
+    </div>
+  </div>
 
-  <select id="mes">
-  </select>
-
-  <select id="ano">
-  </select>
 
   <script src="script/index.js"></script>  <!--JAVASCRIPT-->
 </body>

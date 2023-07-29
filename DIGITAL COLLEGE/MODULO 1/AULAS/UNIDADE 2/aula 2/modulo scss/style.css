@@ -23,4 +23,65 @@
 @media only screen and (min-device-width: 481px) and (max-device-width: 900px) {
   /* tablets */
 }
-/*--------------------------------------------------------------------------------*//*# sourceMappingURL=style.css.map */
+/*--------------------------------------------------------------------------------*/
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  width: 400px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+#container h1 {
+  font-size: 55px;
+}
+
+#container h1 span {
+  font-size: 55px;
+}
+
+#container #acao {
+  width: 100%;
+  border-radius: 5px;
+  background-color: green;
+  height: 46px;
+  cursor: pointer;
+  border: 0;
+  color: white;
+  font-size: 18px;
+}
+
+#container #acao[estado=i] {
+  background-color: green;
+}
+
+#container #acao[estado=p] {
+  background-color: #ff0000;
+}
+
+#container #acao[estado=c] {
+  background-color: #c30092;
+}
+
+#container .setup {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+#container .setup input {
+  width: calc(33% - 8px);
+  height: 40px;
+  padding-left: 8px;
+}/*# sourceMappingURL=style.css.map */
