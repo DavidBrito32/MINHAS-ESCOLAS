@@ -1,0 +1,11 @@
+.Carro {
+  width: 100%;
+  border: 1px solid gray;
+  margin: 10px 0;
+}
+.Carro h2 {
+  color: red;
+}
+.Carro ul {
+  list-style: none;
+}/*# sourceMappingURL=Carro.css.map */

@@ -1,0 +1,10 @@
+//imports de scss
+@import './variables/colorPaint';
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333a40;
+    color: white;
+}

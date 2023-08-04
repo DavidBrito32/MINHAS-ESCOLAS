@@ -1,0 +1,173 @@
+header{
+    width: 100%;
+    height: 90px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    // overflow-x: hidden;
+
+    .logo{
+        width: 130px;
+        height: 100%;
+
+        img{
+            width: 90%;
+            height: 90%;
+        }
+    }
+
+    nav {
+        width: 300px;
+        .burguer{
+            width: 35px;
+            height: 30px;
+            display: flex;
+            position: absolute;
+            visibility: hidden;
+            opacity: 0;
+            flex-direction: column;
+            justify-content: space-between;
+            transition-duration: 400ms;
+            cursor: pointer;
+    
+            span{
+                width: 100%;
+                height: 4px;
+                background-color: black;
+                border: 12px;
+            }
+        }
+
+        ul{
+            width: 200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+    }
+
+    
+}
+
+@media only screen and (max-device-width: 479px) {
+    header{
+        width: 100%;
+        justify-content: space-between;
+
+        .logo{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+                img{
+                    height: 60%;
+                    width: 60%;
+                }
+        }
+
+            h1{
+                display: none;
+            }
+
+        nav{
+            .burguer{
+                position: absolute;
+                right: 30px;
+                top: 30px;
+                visibility: visible;
+                opacity: 1;
+            }
+
+            ul{
+                width: 100%;
+                height: 0px;
+                background-color: #656573;
+                position: absolute;
+                flex-direction: column;
+                justify-content: space-around;
+                top: 12vh;
+                left: 50%;
+                transform: translateX(-50%);
+                visibility: hidden;
+                opacity: 0;
+                transition-duration: 400ms;
+                overflow: hidden;
+
+                    &.active{
+                        visibility: visible;
+                        opacity: 1;
+                        height: 200px;
+                        border-bottom-left-radius: 12px;
+                        border-bottom-right-radius: 12px;
+                    }
+        
+            }
+
+        }
+    }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 768px) {
+    header{
+        width: 100%;
+
+        .logo{
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+                img{
+                    height: 60%;
+                    width: 60%;
+                }
+        }
+
+            h1{
+                display: none;
+            }
+
+        nav{
+            .burguer{
+                position: absolute;
+                right: 30px;
+                top: 30px;
+                visibility: visible;
+                opacity: 1;
+            }
+
+            ul{
+                width: 100%;
+                height: 0px;
+                background-color: #656573;
+                position: absolute;
+                flex-direction: column;
+                justify-content: space-around;
+                top: 12vh;
+                left: 50%;
+                transform: translateX(-50%);
+                visibility: hidden;
+                opacity: 0;
+                transition-duration: 400ms;
+                overflow: hidden;
+
+                    &.active{
+                        visibility: visible;
+                        opacity: 1;
+                        height: 200px;
+                        border-bottom-left-radius: 12px;
+                        border-bottom-right-radius: 12px;
+                    }
+        
+            }
+
+        }
+    }
+}
