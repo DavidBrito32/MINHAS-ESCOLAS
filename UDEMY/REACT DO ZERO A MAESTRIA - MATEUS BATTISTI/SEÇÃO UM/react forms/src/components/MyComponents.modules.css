@@ -1,0 +1,36 @@
+form{
+    width: 500px;
+    margin: 0;
+    text-align: left;
+}
+
+input{
+    width: 150px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #dadada;
+    font-weight: bolder;
+    padding-left: 20px;
+}
+
+input:focus{
+    background-color: chocolate;
+}
+
+button{
+    width: 150px;
+    height: 30px;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+
+input::placeholder{
+    color: black;
+}
+
+input, textarea, select, span{
+    display: block;
+    margin-top: 10px;
+}
