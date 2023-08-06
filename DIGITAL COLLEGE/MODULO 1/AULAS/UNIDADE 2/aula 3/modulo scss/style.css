@@ -1,0 +1,34 @@
+/***************VARIAVEIS DE CORES**************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-size: 1rem;
+  font-family: Helvetica;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
+
+/* RESPONSIVIDADE GERAL SIMPLIFICADA  */
+@media only screen and (max-device-width: 480px) {
+  /* celulares  */
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 900px) {
+  /* tablets */
+}
+@media only screen and (min-device-width: 901px) and (max-device-width: 1200px) {
+  /* notebooks e desktops */
+}
+@media only screen and (min-device-width: 1201px) {
+  /* telas maiores */
+}
+/* ********************************************************************************* *//*# sourceMappingURL=style.css.map */
