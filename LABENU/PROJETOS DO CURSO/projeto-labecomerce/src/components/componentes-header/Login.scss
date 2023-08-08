@@ -1,0 +1,120 @@
+@import '../../modulo_scss/variables/colorPaint';
+
+.LoginOptions{
+    width: 12rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition-duration: 300ms;
+
+
+        button{
+            width: 6rem;
+            height: 40px;
+            border-radius: 8px;
+            background-color: $button-normal;
+            color: $Primary-color;
+            font-weight: bolder;
+            font-size: 1rem;
+            cursor: pointer;
+            border: none;
+            outline: none;
+
+                &:hover{
+                    background-color: $button-normal-hover;
+                }
+                &:active{
+                    border: 1px solid $Primary-color;
+                    transform: scale(0.98);
+                    box-shadow:inset 1px 2px 2px 1px #000000;
+                }
+        }
+
+        .imagem{
+            width: 3rem;
+            height: 3rem;
+            position: relative;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+    
+            .circle{
+                border-radius: 50%;
+                background-color: $Secundary-color;
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                top: -5px;
+                right: -5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                    p{
+                        font-size: 0.8rem;
+                        font-weight: bolder;
+                        color: $Almost-Gray;
+                    }
+            }
+        }
+}
+
+@media only screen and (max-device-width: 480px){
+    .LoginOptions{
+        position: absolute;
+        width:5rem;
+        right: 1rem;
+        top: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition-duration: 400ms;
+        height: 0%;
+        overflow: hidden;
+        button{
+            width: 50px;
+            height: 30px;
+            font-size: 0.7rem;
+        }
+
+        .imagem{
+            width: 2rem;
+            height: 2rem;
+            position: relative;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+    
+            .circle{
+                border-radius: 50%;
+                background-color: $Secundary-color;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                top: -5px;
+                right: -5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                    p{
+                        font-size: 0.8rem;
+                        font-weight: bolder;
+                        color: $Almost-Gray;
+                    }
+            }
+        }
+
+        &.active{
+            visibility: visible;
+            opacity: 1;
+            height: 100%;
+            overflow: visible;
+            top: 13.5vh;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px){
+
+}

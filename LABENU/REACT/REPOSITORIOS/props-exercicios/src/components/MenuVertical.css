@@ -1,0 +1,9 @@
+nav{
+    flex-basis: 300px;
+    border-right-style: solid;
+    border-right-width: thin;
+}
+
+nav .botoes-meunu-vertical{
+    list-style-type: none;
+}

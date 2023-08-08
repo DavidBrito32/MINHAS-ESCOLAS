@@ -1,0 +1,21 @@
+.container-usuario{
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 50px;
+    gap: 4px;
+    border-top: 2px solid blue;
+    padding-left: 5px;
+}
+
+.container-usuario img {
+    border-radius: 50%;
+    height: 50%;
+}
+
+.container-usuario p{
+    font-size: 1rem;
+    color: #0800ff;
+}
