@@ -1,8 +1,8 @@
-import './InfoUsuario.css'
+import './InfoUsuario.css';
 
 const InfoUsuario = () =>{
 
-    const usuario = "David"
+    const usuario = "David";
 
     return (
         <>

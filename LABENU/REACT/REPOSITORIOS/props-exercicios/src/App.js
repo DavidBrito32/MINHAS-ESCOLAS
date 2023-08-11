@@ -5,7 +5,7 @@ import img1 from './img/ITACHI.jpg';
 import img2 from './img/KAKASHI.jpg';
 import img3 from './img/anime-night-stars-sky-clouds-scenery-digital-art-4k-wallpaper-uhdpaper.com-772@0@i.jpg';
 import img4 from './img/astronaut-152023.png';
-import img5 from './img/colorful-abstract-ai-art-4k-wallpaper-uhdpaper.com-16@0@i.jpg';
+// import img5 from './img/colorful-abstract-ai-art-4k-wallpaper-uhdpaper.com-16@0@i.jpg';
 import img6 from './img/itachi-crow-sharingan-naruto-anime-4k-uhdpaper.com-1.jpg';
 import img7 from './img/naruto-uzumaki-baryon-mode-4k-wallpaper-3840x2160-uhdpaper.com-254.0_c.jpg';
 import img8 from './img/night-sky-colorful-beautiful-clouds-mountain-valley-digital-art-4k-wallpaper-uhdpaper.com-608@1@k.jpg';
@@ -23,6 +23,9 @@ import Card from './components/Card';
 import Footer from './components/Footer'
 
 export default function App() {
+
+  const nome1 = "Davi";
+
   return (
     <>
       <div className="tela-inteira">
@@ -32,17 +35,17 @@ export default function App() {
         <main>
           <MenuVertical />
               <section className="painel-de-videos">
-                <Card titulo={"Itachi"} img={img1}/>
-                <Card titulo={"Kakashi"} img={img2}/>
-                <Card titulo={"Climbs"} img={img3}/>
-                <Card titulo={"Astronauta"} img={img4}/>
-                <Card titulo={"Walpaper"} img={img6}/>
-                <Card titulo={"Itachi movie"} img={img6}/>
-                <Card titulo={"Naruto barion"} img={img7}/>
-                <Card titulo={"Montain"} img={img8}/>
-                <Card titulo={"Sasuke Rinegan"} img={img9}/>
-                <Card titulo={"SHISUI"} img={img10}/>
-                <Card titulo={"SHISUI"} img={img11}/>
+                <Card nomeUser={nome1} titulo={"Itachi"} img={img1}/>
+                <Card nomeUser={nome1} titulo={"Kakashi"} img={img2}/>
+                <Card nomeUser={nome1} titulo={"Climbs"} img={img3}/>
+                <Card nomeUser={nome1} titulo={"Astronauta"} img={img4}/>
+                <Card nomeUser={nome1} titulo={"Walpaper"} img={img6}/>
+                <Card nomeUser={nome1} titulo={"Itachi movie"} img={img6}/>
+                <Card nomeUser={nome1} titulo={"Naruto barion"} img={img7}/>
+                <Card nomeUser={nome1} titulo={"Montain"} img={img8}/>
+                <Card nomeUser={nome1} titulo={"Sasuke Rinegan"} img={img9}/>
+                <Card nomeUser={nome1} titulo={"SHISUI"} img={img10}/>
+                <Card nomeUser={nome1} titulo={"SHISUI"} img={img11}/>
               </section>
         </main>
 
