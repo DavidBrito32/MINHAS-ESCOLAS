@@ -1,0 +1,117 @@
+/***************VARIAVEIS DE CORES**************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#filtro {
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding-left: 10px;
+  margin-left: 100px;
+  margin-top: 100px;
+  text-transform: uppercase;
+}
+
+#produtos {
+  padding: 16px 100px 0 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+#produtos li {
+  width: calc(25% - 12px);
+  margin-bottom: 26px;
+}
+#produtos li .image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#produtos li .image span {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 10px;
+  color: white;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#produtos li .image span box-icon {
+  position: absolute;
+  top: 2px;
+  width: 36px;
+  height: 36px;
+  z-index: -1;
+  fill: red;
+}
+#produtos li .image img {
+  display: block;
+  width: 100%;
+  height: 250px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#produtos li h4 {
+  margin-top: 16px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#produtos li h5 {
+  font-size: 10px;
+  line-height: 20px;
+  padding: 0 16px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+#produtos li p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+#produtos li h6 {
+  margin-top: 16px;
+  font-size: 18px;
+}
+#produtos li a {
+  width: 100%;
+  line-height: 40px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+  border: 2px solid black;
+  margin-top: 16px;
+  transition: all ease 200ms;
+}
+#produtos li a:hover {
+  background-color: black;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

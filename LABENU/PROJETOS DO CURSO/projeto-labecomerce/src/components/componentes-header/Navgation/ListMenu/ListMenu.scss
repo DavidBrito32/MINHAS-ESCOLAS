@@ -36,7 +36,8 @@
     height: calc(100vh - 12vh);
     background-color: $Canadian-Blue-five;
     overflow: hidden;
-
+    z-index: 10000 !important;
+    
     &.active {
       width: 100%;
       visibility: visible;

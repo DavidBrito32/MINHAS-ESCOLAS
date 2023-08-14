@@ -1,0 +1,14 @@
+{
+  "name": "aula-4",
+  "version": "1.0.0",
+  "description": "**[ ]** UTILIZAR PADROES DE DESENVOLVIMENTO\r **[ ]** UTILIZE O MODULO SCSS CONFORME O PADRAO\r **[ ]** VARIAVEIS CENTRALIZADAS EM UM UNICO ARQUIVO\r **[ ]** VARIAVEIS COM NOMES DE BLOCOS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.1.6"
+  }
+}
