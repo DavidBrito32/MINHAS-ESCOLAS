@@ -1,13 +1,17 @@
-import BannerInicial from './BannerInicial/BannerInicial';
-import ProdutosContainer from './Produtos/ProdutosContainer';
+import BannerInicial from "./BannerInicial/BannerInicial";
+import ProdutosContainer from "./Produtos/ProdutosContainer";
+import Modal from "../Utilitarios/Modal";
 
-const Main = () => {
+const Main = ({ search, modal, fechaModal }) => {
   return (
     <>
-        <BannerInicial />
-        <ProdutosContainer />
-    </>
-  )
-}
+      <BannerInicial />
 
-export default Main
+      <Modal fechaModal={fechaModal} modal={modal} search={search} />
+
+      <ProdutosContainer search={search} />
+    </>
+  );
+};
+
+export default Main;

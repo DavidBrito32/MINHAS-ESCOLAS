@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Davi Brito">
+  <meta name="description" content="Desenvolvedor Davi Brito">
+  <meta name="keywords" content="sites, web, desenvolvimento">
+  <!--Imports-->
+
+
+  <!--FIM Imports-->
+  <link rel="stylesheet" href="./modulo_scss/style.css">
+  <title>Desenvolvimento Web</title>
+</head>
+<body>
+
+    <div class="container">
+      <div class="bg">
+
+        <img src="images/bg.svg" alt="undraw">
+
+      </div>
+
+
+
+      <div class="form">
+        <h2>Dados Cadastrais</h2>
+        <form>
+          <label for="cep">CEP</label>
+          <input onkeyup="buscaCEP()" type="text" id="cep" placeholder="Digite seu cep aqui...">
+
+          <label for="logradouro">Av/Rua</label>
+          <input type="text" id="logradouro" placeholder="Rua do endereço">
+
+          <label for="bairro">Bairro</label>
+          <input type="text" id="bairro" placeholder="Bairro do endereço">
+
+          <label for="localidade">Cidade</label>
+          <input type="text" id="localidade" placeholder="Cidade do endereço">
+
+          <label for="estado">Estado</label>
+          <select  id="estado">
+            <option selected disabled>Selecione o estado...</option>
+          </select>
+          <button>Enviar</button>
+
+        </form>
+      </div>
+    </div>
+
+
+  <script src="../script/index.js"></script>
+  <!--JAVASCRIPT-->
+</body>
+</html>

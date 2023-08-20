@@ -2,7 +2,7 @@ import "./Header.scss";
 import Logo from "./Logo/Logo";
 import Navigation from "./Navgation/Navigation";
 import { useState } from "react";
-const Header = () => {
+const Header = ({ pesquisa, search, modal, carrinho }) => {
   const [burguer, setBurguer] = useState(false);
 
   const abreBurguer = () => {
@@ -12,7 +12,14 @@ const Header = () => {
   return (
     <header>
       <Logo />
-      <Navigation burguer={burguer} abreBurguer={abreBurguer} />
+      <Navigation
+        modal={modal}
+        search={search}
+        pesquisa={pesquisa}
+        burguer={burguer}
+        abreBurguer={abreBurguer}
+        carrinho={carrinho}
+      />
     </header>
   );
 };

@@ -4,10 +4,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 40rem;
+    width: 30rem;
     height: 100%;
     position: relative;
     transition-duration: 600ms;
+        z-index: 4;
         input{
             padding-left: 20px;
             width: 100%;
@@ -70,12 +71,13 @@
         opacity: 0;
         transition-duration: 400ms;
         overflow: hidden;
+        z-index: 5;
 
             &.active{
                 width: 15rem;
                 visibility: visible;
                 opacity: 1;
-                z-index: 10;
+                // z-index: 10;
             }
     }
 }

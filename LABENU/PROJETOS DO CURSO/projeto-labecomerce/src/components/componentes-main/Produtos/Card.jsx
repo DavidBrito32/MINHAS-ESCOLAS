@@ -1,20 +1,25 @@
-import './Card.scss';
+import "./Card.scss";
+import "boxicons";
+import  oferta from '../../../assets-img/icons/Design sem nome.svg'
 
-const Card = ({nomeProduto, descricao, image, precoUnitario, desconto, rate, chave}) => {
+const Card = (props) => {
   return (
-    <li key={chave}>
+    <li key={props.chave}>
       <div className="produto">
+          <div className="oferta">
+            {props.promo ? <img src={oferta} alt="oferta" /> : ""}
+          </div>
         <div className="imagem">
           <box-icon type="solid" name="heart"></box-icon>
-          <span>{rate}</span>
-          <img src={image} alt="Produto" />
+          <span>{props.rate}</span>
+          <img src={props.image} alt="Produto" />
         </div>
-        <h4>{nomeProduto}</h4>
-        <p>{descricao}</p>
+        <h4>{props.nomeProduto}</h4>
+        <p>{props.descricao}</p>
         <h5>
-          $ <strong>{precoUnitario}</strong> -{" "}
+          <strong>{props.precoUnitario}</strong> {" "}
           <p>
-            <em>$ {desconto}</em>
+            <em>{props.desconto}</em>
           </p>
         </h5>
         <a href={"#!"}>

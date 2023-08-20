@@ -1,4 +1,4 @@
-@import '../../../../modulo_scss/variables/colorPaint.scss';
+@import "../../../../modulo_scss/variables/colorPaint.scss";
 
 .ListMenu {
   display: flex;
@@ -36,8 +36,8 @@
     height: calc(100vh - 12vh);
     background-color: $Canadian-Blue-five;
     overflow: hidden;
-    z-index: 10000 !important;
-    
+    // z-index: 100;
+
     &.active {
       width: 100%;
       visibility: visible;
@@ -58,23 +58,23 @@
     background-color: $Canadian-Blue-five;
     overflow: hidden;
 
-      a{
-        font-size: 1.3rem;
-      }
+    a {
+      font-size: 1.3rem;
+    }
 
-      &.active{
-        top: 12vh;
-        height: 20vh;
-        visibility: visible;
-        opacity: 1;
-      }
+    &.active {
+      top: 12vh;
+      height: 20vh;
+      visibility: visible;
+      opacity: 1;
+    }
   }
 }
 
-@media only screen and (min-device-width: 758px) and (max-device-width: 1024px){
-  .ListMenu{
+@media only screen and (min-device-width: 758px) and (max-device-width: 1024px) {
+  .ListMenu {
     height: 100%;
-    a{
+    a {
       font-size: 1rem;
     }
   }
