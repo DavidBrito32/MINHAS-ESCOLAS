@@ -16,12 +16,12 @@ export const ListarProdutos = [
     id: 1,
     image: `${img1}`,
     nomeProduto: `Nike Mario`,
-    precoUnitario: "$ 1.200,00",
+    precoUnitario: 1200,
     categoria: "Deluxe-Edition",
     descricao: "Air Jordan Exclusive Edition Mario",
     desconto: "$ 1.777,00",
     rate: "4,5",
-    promocao: true
+    promocao: true,
   },
   {
     id: 2,
@@ -32,7 +32,7 @@ export const ListarProdutos = [
     descricao: "Nike edição supreme edition 2022",
     desconto: "",
     rate: "4,9",
-    promocao: false
+    promocao: false,
   },
   {
     id: 3,
@@ -43,7 +43,7 @@ export const ListarProdutos = [
     descricao: "Edition Girls women",
     desconto: "",
     rate: "4,8",
-    promocao: false
+    promocao: false,
   },
   {
     id: 4,
@@ -54,7 +54,7 @@ export const ListarProdutos = [
     descricao: "Nike color white golden",
     desconto: "",
     rate: "5,0",
-    promocao: false
+    promocao: false,
   },
   {
     id: 5,
@@ -65,18 +65,18 @@ export const ListarProdutos = [
     descricao: "Version nike maldives green",
     desconto: "",
     rate: "5,0",
-    promocao: false
+    promocao: false,
   },
   {
     id: 6,
     image: `${img6}`,
     nomeProduto: "Nike Extra edition",
-    precoUnitario: "$ 199.98",
+    precoUnitario: "$ 1.199.98",
     categoria: "Deluxe-Edition",
     descricao: "Version exclusive",
-    desconto: "",
+    desconto: "2.300,00",
     rate: "4,8",
-    promocao: false
+    promocao: true,
   },
   {
     id: 7,
@@ -87,7 +87,7 @@ export const ListarProdutos = [
     descricao: "Version exclusive",
     desconto: "$ 24.565",
     rate: "3,5",
-    promocao: true
+    promocao: true,
   },
   {
     id: 8,
@@ -98,7 +98,7 @@ export const ListarProdutos = [
     descricao: "Version exclusive",
     desconto: "$ 34.569,00",
     rate: "3,5",
-    promocao: true
+    promocao: true,
   },
   {
     id: 9,
@@ -109,18 +109,18 @@ export const ListarProdutos = [
     descricao: "Version exclusive",
     desconto: "",
     rate: "3,5",
-    promocao: false
+    promocao: false,
   },
   {
     id: 10,
     image: `${img10}`,
     nomeProduto: "Nike Deluxe Edition",
-    precoUnitario:"$ 4.562,00",
+    precoUnitario: "$ 4.562,00",
     categoria: "Deluxe-Edition",
     descricao: "Version exclusive",
     desconto: "6.500,00",
     rate: "3,5",
-    promocao: true
+    promocao: true,
   },
   {
     id: 11,
@@ -131,7 +131,7 @@ export const ListarProdutos = [
     descricao: "Version exclusive",
     desconto: "$ 7.560,00",
     rate: "3,5",
-    promocao: true
+    promocao: true,
   },
   {
     id: 12,
@@ -142,6 +142,6 @@ export const ListarProdutos = [
     descricao: "Version exclusive",
     desconto: "",
     rate: "3,5",
-    promocao: false
+    promocao: false,
   },
 ];

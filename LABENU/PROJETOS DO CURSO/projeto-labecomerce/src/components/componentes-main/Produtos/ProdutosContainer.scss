@@ -13,7 +13,6 @@
     font-size: 1.3rem;
     display: flex;
     justify-content: space-between;
-    padding: 0 100px;
   }
 
   ul {
@@ -25,4 +24,15 @@
     align-items: center;
     transition-duration: 1s;
   }
+
+    .pagina{
+      text-align: right;
+      color: #648000;
+      font-weight: bold;
+      font-size: 1.5rem;
+
+          &:hover{
+            color: red;
+          }
+    }
 }

@@ -1,38 +1,42 @@
 .ItensCarro{
     margin-top: 10px;
     width: 100%;
-    height: 150px;
+    height: 200px;
     background-color: #5d2ea3;
     border-bottom: 3px solid black;
     box-shadow: -10px -10px 40px #000000a2;
     display: flex;
+    flex-direction: column;
     border-radius: 12px;
     padding: 20px;
+    gap: 20px;
 
         .Id-produto{
             display: flex;
             align-items: center;
             gap: 20px;
             justify-content: space-around;
-            width: 60%;
-            height: 100%;
+            width: 100%;
+            height: 50%;
 
             .imagem{
-                width: 25%;
+                width: 20%;
                 height: 100%;
                     img{
-                        width: 100%;
+                        display: block;
+                        margin: 0 auto;
+                        width: 90%;
                         height: 100%;
                         border-radius: 12px;
                     }
             }
 
             .prd{
-                width: 70%;
+                width: 80%;
                 height: 100%;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-around;
+                justify-content: space-between;
                 align-items: center;
                 border: 2px solid #000000;
                 color: white;
@@ -44,7 +48,8 @@
                     h2{
                         width: 100%;
                         display: flex;
-                        justify-content: space-around;
+                        justify-content: center;
+                        gap: 30px;
                         color: white;
                         font-size: 1.3rem;
                     }
@@ -62,19 +67,20 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 40%;
+            width: 100%;
             padding: 0 10px;
 
                 .quantidade{
-                    width: calc(100% / 2);
+                    width: 100%;
                     height: 100%;
                     display: flex;
                     align-items: center;
 
                         h4{
-                            width: 60%;
-                            text-align: left;
-                            font-size: 1rem;
+                            width: 70%;
+                            text-align: center;
+                            font-size: 1.8rem;
+                            color: white;
                                 span{
                                     color: #67bd77;
                                 }
@@ -83,7 +89,7 @@
                         p{
                             width: 20%;
                             text-align: center;
-                            font-size: 1.5rem;
+                            font-size: 1.6rem;
                             font-weight: bolder;
                             color: white;
                         }
@@ -92,8 +98,8 @@
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            width: 30px;
-                            height: 30px;
+                            width: 50px;
+                            height: 50px;
                             border-radius: 50%;
                             font-size: 1.5rem;
                             font-weight: bolder;
@@ -118,25 +124,31 @@
                     width: calc(100% / 2);
                     display: flex;
                     justify-content: center;
+                    position: relative;
                     a{
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        width: 100px;
-                        height: 50px;
+                        width: 40px;
+                        height: 40px;
                         border-radius: 8px;
                         font-size: 1rem;
                         color: white;
                         font-weight: bold;
-                        background-color: #000052;
+                        background-color: #af0000;
                         transition: all ease 300ms;
-
-                            &:hover{
-                                background-color: #31318d;
-                            }
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
 
                             &:active{
                                 transform: scale(0.97);
+                            }
+
+                            img{
+                                width: 80%;
+                                height: 80%;
                             }
                     }
                 }

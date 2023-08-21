@@ -12,7 +12,6 @@
     transition: all ease-in-out 400ms;
     visibility: hidden;
     opacity: 0;
-    box-shadow: 1px 27px 44px  #000000;
 
         .botaoFechar{
             width: 40px;
@@ -64,5 +63,6 @@
         &.active{
             visibility: visible;
             opacity: 1;
+            overflow-y: auto;
         }
 }

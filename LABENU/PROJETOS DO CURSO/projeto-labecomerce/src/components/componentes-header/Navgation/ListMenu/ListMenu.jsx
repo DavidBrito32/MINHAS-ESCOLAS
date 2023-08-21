@@ -1,4 +1,6 @@
 import "./ListMenu.scss";
+import car from "../../../../assets-img/icons/carrinho de compras.svg"
+
 
 const ListMenu = ({ burguer, carrinho }) => {
   return (
@@ -11,10 +13,10 @@ const ListMenu = ({ burguer, carrinho }) => {
           <a href={"#!"}>Products</a>
         </li>
         <li>
-          <a onClick={carrinho} href={"#!"}>Carrinho</a>
+          <a href={"#!"}>Login</a>
         </li>
         <li>
-          <a href={"#!"}>Contact</a>
+          <a onClick={carrinho} href={"#!"}><img src={car} alt="" /></a>
         </li>
       </ul>
     </div>

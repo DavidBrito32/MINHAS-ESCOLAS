@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./ItensCarro.scss";
+import trash from "../../../../assets-img/icons/trash icons.png";
 
 const ItensCarro = (props) => {
   const [Variavel, setVariavel] = useState(0);
@@ -13,12 +14,12 @@ const ItensCarro = (props) => {
   const decrementador = () => {
     if (Variavel > 0) {
       setVariavel(Variavel - 1);
-    } else if (Variavel === 0) {
+    } else if (Variavel < 1) {
       alert("Inclua pelo menos um produto");
       setVariavel(1);
     }
   };
-  
+
   return (
     <div className="ItensCarro">
       <div className="Id-produto">
@@ -44,7 +45,9 @@ const ItensCarro = (props) => {
         </div>
 
         <div className="compra">
-          <a href="#!">Comprar</a>
+          <a onClick={props.excluir} href="#!">
+            <img src={trash} alt="excluir" title="remover item" />
+          </a>
           <br />
         </div>
       </div>

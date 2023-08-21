@@ -6,6 +6,7 @@ import "./modulo_scss/App.scss";
 import Carrinho from "./components/componentes-header/carrinho/Carrinho";
 
 function App() {
+  const [armazenaCarro, setArmazenaCarro] = useState([]);
   const [search, setSearch] = useState("");
   const [abreModal, setAbreModal] = useState(false);
 
@@ -13,14 +14,29 @@ function App() {
 
   const abreCarro = () => {
     setCarrinho(!carrinho);
-  }
+  };
 
   return (
-    <>    
-      <Header carrinho={abreCarro} modal={setAbreModal} pesquisa={setSearch} search={search}/>
-      <Main modal={abreModal} search={search} fechaModal={setAbreModal}/>
+    <>
+      <Header
+        carrinho={abreCarro}
+        modal={setAbreModal}
+        pesquisa={setSearch}
+        search={search}
+      />
+      <Main
+        comprasCarro={setArmazenaCarro}
+        modal={abreModal}
+        search={search}
+        fechaModal={setAbreModal}
+      />
       <Footer />
-      <Carrinho abreCarro={abreCarro} carrinho={carrinho} />
+      <Carrinho
+        objeto={armazenaCarro}
+        abreCarro={abreCarro}
+        carrinho={carrinho}
+        setArmazenaCarro={setArmazenaCarro}
+      />
     </>
   );
 }
