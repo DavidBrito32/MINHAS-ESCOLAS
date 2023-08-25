@@ -4,6 +4,7 @@ import Card from "./Card";
 import { Selecao } from "../../styles/Styles";
 
 const ProdutosContainer = (props) => {
+
   const produtosListados = ListarProdutos.filter((item) =>
     item.nomeProduto.toLowerCase().includes(props.search.toLowerCase())
   ).map((item) => (
@@ -18,9 +19,12 @@ const ProdutosContainer = (props) => {
         desconto={item.desconto}
         promo={item.promocao}
         objeto={item}
+        carro={props.carro}
       />
     </li>
   ));
+
+
 
   return (
     <>

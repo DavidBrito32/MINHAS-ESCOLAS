@@ -4,7 +4,8 @@ import oferta from "../../../assets-img/icons/Design sem nome.svg";
 
 const Card = (props) => {
   function addCarrinho() {
-    props.comprasCarro(props.objeto);
+    const newObject = [...props.carro, props.objeto]; 
+    props.comprasCarro(newObject);
   }
 
   return (

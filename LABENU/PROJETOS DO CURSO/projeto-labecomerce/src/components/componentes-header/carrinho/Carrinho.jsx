@@ -3,13 +3,26 @@ import ItensCarro from "./itens_do_carrinho/ItensCarro";
 import Fechar from "../../../assets-img/icons/botao fechar.png";
 
 const Carrinho = (props) => {
-  const novoObjeto = [];
-  novoObjeto.push(props.objeto);
-
-  const excluir = () => {
-    props.setArmazenaCarro("");
-    alert(`produto removido`);
+  const excluir = (e) => {  
+    
   };
+
+  let novoObj = [];
+  novoObj.push(props.objeto);
+
+novoObj = props.objeto.map((item, i) => (<li key={i}>
+  <ItensCarro
+    excluir={excluir}
+    classificacao={item.rate}
+    category={item.categoria}
+    imagem={item.image}
+    preco={item.precoUnitario}
+    descricao={item.descricao}
+    nome={item.nomeProduto}
+  />
+</li>));
+
+
 
   const comprar = () => {
     alert(
@@ -27,19 +40,7 @@ const Carrinho = (props) => {
           <img src={Fechar} alt="" />
         </span>
         <ul>
-          {novoObjeto.map((item, i) => (
-            <li key={i}>
-              <ItensCarro
-                excluir={excluir}
-                classificacao={item.rate}
-                category={item.categoria}
-                imagem={item.image}
-                preco={item.precoUnitario}
-                descricao={item.descricao}
-                nome={item.nomeProduto}
-              />
-            </li>
-          ))}
+          {novoObj}
         </ul>
         <button onClick={comprar} className="Final">
           Finalizar todos

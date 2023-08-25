@@ -16,12 +16,12 @@
             border-radius: 8px;
             border: none;
             outline: none;
-            background-color: $Medium-Gray;
-            color: #ffffff;
+            background-color: #dfdbdb;
+            color: #000000;
             transition-duration: 300ms;
 
                 &::placeholder{
-                    color: #ffffff;
+                    color: #000000;
                 }
 
                 &:focus{

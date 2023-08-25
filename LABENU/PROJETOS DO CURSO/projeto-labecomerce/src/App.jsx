@@ -9,8 +9,9 @@ function App() {
   const [armazenaCarro, setArmazenaCarro] = useState([]);
   const [search, setSearch] = useState("");
   const [abreModal, setAbreModal] = useState(false);
-
   const [carrinho, setCarrinho] = useState(false);
+
+  console.log(armazenaCarro);
 
   const abreCarro = () => {
     setCarrinho(!carrinho);
@@ -29,13 +30,14 @@ function App() {
         modal={abreModal}
         search={search}
         fechaModal={setAbreModal}
+        carro={armazenaCarro}
       />
       <Footer />
       <Carrinho
+        modificaCarro={setArmazenaCarro}
         objeto={armazenaCarro}
         abreCarro={abreCarro}
         carrinho={carrinho}
-        setArmazenaCarro={setArmazenaCarro}
       />
     </>
   );
