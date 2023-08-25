@@ -8,7 +8,7 @@ type EstadoProps = {
     id: number,
     sigla: string,
     nome: string,
-    regiao: string
+    regiao?: string
 }
 
 
@@ -54,8 +54,11 @@ async function buscaCEP(){
 
             //@ts-ignore
             logradouro.value = response.logradouro;
+                        //@ts-ignore
             bairro.value = response.bairro;
+                        //@ts-ignore
             localidade.value = response.localidade;
+                        //@ts-ignore
             estado.value = response.uf;
             
         }catch (error){

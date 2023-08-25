@@ -1,4 +1,4 @@
-async listarPokemons(){
+async function listarPokemons(){
 
                 try{
                     let request = await fetch('https://pokeapi.co/api/v2/pokemon/');
