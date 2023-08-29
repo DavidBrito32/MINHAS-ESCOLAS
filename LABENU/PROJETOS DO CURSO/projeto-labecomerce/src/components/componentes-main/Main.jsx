@@ -10,7 +10,9 @@ const Main = ({ search, modal, fechaModal, comprasCarro, carro}) => {
       <Modal 
       fechaModal={fechaModal} 
       modal={modal} 
-      search={search} 
+      search={search}
+      carro={carro} 
+      comprasCarro={comprasCarro}
       />
 
       <ProdutosContainer 

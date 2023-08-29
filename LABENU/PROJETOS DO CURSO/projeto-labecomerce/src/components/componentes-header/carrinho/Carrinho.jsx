@@ -1,26 +1,33 @@
 import "./Carrinho.scss";
 import ItensCarro from "./itens_do_carrinho/ItensCarro";
 import Fechar from "../../../assets-img/icons/botao fechar.png";
+import { useEffect, useState } from "react";
+
 
 const Carrinho = (props) => {
-  const excluir = (e) => {  
+
+
+    let novoObj;
+
+    const excluir = (itemId) => {
+      alert("Você Excluiu o produto")
+      props.abreCarro();
+    };
     
-  };
 
-  let novoObj = [];
-  novoObj.push(props.objeto);
+    novoObj = props.objeto.map((item, i) => (<li key={i}>
+      <ItensCarro
+        excluir={(item) => excluir(item.id)}
+        classificacao={item.rate}
+        category={item.categoria}
+        imagem={item.image}
+        preco={item.precoUnitario}
+        descricao={item.descricao}
+        nome={item.nomeProduto}
+      />
+    </li>));
 
-novoObj = props.objeto.map((item, i) => (<li key={i}>
-  <ItensCarro
-    excluir={excluir}
-    classificacao={item.rate}
-    category={item.categoria}
-    imagem={item.image}
-    preco={item.precoUnitario}
-    descricao={item.descricao}
-    nome={item.nomeProduto}
-  />
-</li>));
+
 
 
 
@@ -30,6 +37,8 @@ novoObj = props.objeto.map((item, i) => (<li key={i}>
     );
     props.abreCarro();
   };
+
+
 
   return (
     <>

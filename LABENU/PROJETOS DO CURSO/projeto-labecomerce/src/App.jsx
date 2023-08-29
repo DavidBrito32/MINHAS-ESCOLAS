@@ -11,8 +11,6 @@ function App() {
   const [abreModal, setAbreModal] = useState(false);
   const [carrinho, setCarrinho] = useState(false);
 
-  console.log(armazenaCarro);
-
   const abreCarro = () => {
     setCarrinho(!carrinho);
   };

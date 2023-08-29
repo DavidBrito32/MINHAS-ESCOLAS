@@ -15,41 +15,88 @@ const GlobalStyled = createGlobalStyle`
     margin: 0;
     box-sizing: border-box;
   }
-`
+`;
 const MainContainer = styled.main`
   height: 100vh;
-`
+`;
 
 function App() {
-  const [tela, setTela] = useState(1);
+  const [tela, setTela] = useState();
 
-  switch(tela){
-    case 1: 
-    return(
-      <TelaPrincipal tela={tela} setTela={setTela} />
-      )
-      case 2:
-        return (
-          <TelaCadastro tela={tela} setTela={setTela} />
-          )
-          case 3:
-            return (
-              <TelaLogin  tela={tela} setTela={setTela}/>              
-        )
+  const mudaTela = (screen) => {
+    setTela(screen);
+  };
 
-        default : 
-        return(
-          <TelaPrincipal tela={tela} setTela={setTela} />
-        )
+  // switch (tela) {
+  //   case "login":
+  //     return (
+  //       <MainContainer>
+  //         <GlobalStyled />
+  //        <TelaLogin mudaTela={mudaTela} />;
+  //       </MainContainer>
+  //     );
+
+  //   case "cadastro":
+  //     return (
+  //       <MainContainer>
+  //         <GlobalStyled />
+  //        <TelaCadastro mudaTela={mudaTela} />;
+  //       </MainContainer>
+  //     );
+
+  //   case "home":
+  //     return (
+  //       <MainContainer>
+  //         <GlobalStyled />
+  //        <TelaPrincipal mudaTela={mudaTela} />;
+  //       </MainContainer>
+  //     );
+
+
+  //   default:
+  //     return (
+  //       <MainContainer>
+  //         <GlobalStyled />
+  //        <TelaLogin mudaTela={mudaTela} />;
+  //       </MainContainer>
+  //     );
+  // } 
+  
+  if(tela === "login"){
+    return (
+      <MainContainer>
+        <GlobalStyled />
+       <TelaLogin mudaTela={mudaTela} />;
+      </MainContainer>
+    );
+  }
+  
+  if(tela === "cadastro"){
+    return (
+      <MainContainer>
+        <GlobalStyled />
+       <TelaCadastro mudaTela={mudaTela} />;
+      </MainContainer>
+    );
   }
 
+  if(tela === "home"){
+    return (
+      <MainContainer>
+        <GlobalStyled />
+       <TelaPrincipal mudaTela={mudaTela} />;
+      </MainContainer>
+    );
+  }else{
+    return (
+      <MainContainer>
+        <GlobalStyled />
+       <TelaLogin mudaTela={mudaTela} />;
+      </MainContainer>
+    );
+  }
 
-  return (
-    <MainContainer >
-      <GlobalStyled/>
-      {tela}
-    </MainContainer>
-  );
+  
 }
 
 export default App;
