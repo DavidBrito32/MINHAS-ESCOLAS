@@ -11,7 +11,7 @@ function TelaLogin(props) {
   const login = () => {
     // fluxo de login (ainda veremos)
     props.mudarTela("TelaPrincipal");
-  };
+}
 
   const mostrarTelaCadastro = () => {
     props.mudarTela("TelaCadastro");
@@ -23,10 +23,10 @@ function TelaLogin(props) {
 
       <Form>
         <StyledLabel htmlFor="email"> E-mail: </StyledLabel>
-        <Input htmlFor="email" />
+        <Input value={props.inputEmail} htmlFor="email" onChange={(e) => props.setInputEmail(e.target.value)} />
 
         <StyledLabel htmlFor="password">Senha: </StyledLabel>
-        <Input id="password" type={"password"} />
+        <Input value={props.inputSenha} id="password" type={"password"} onChange={(e) => props.setInputSenha(e.target.value)} />
 
         <SendButton onClick={login}>Entrar</SendButton>
 

@@ -5,6 +5,12 @@ import trash from "../../../../assets-img/icons/trash icons.png";
 const ItensCarro = (props) => {
   const [Variavel, setVariavel] = useState(0);
 
+  const excluir = (newItem) => {
+    const carrinho = props.objeto.filter((item) => item.id !== newItem);
+    props.modificaCarro(carrinho);
+    localStorage.setItem('armazenaCarro', JSON.stringify(carrinho));
+  };
+
   const incrementador = () => {
     if (Variavel >= 0) {
       setVariavel(Variavel + 1);
@@ -45,7 +51,7 @@ const ItensCarro = (props) => {
         </div>
 
         <div className="compra">
-          <a onClick={props.excluir} href="#!">
+          <a onClick={(id) => excluir(props.id)} href="#!">
             <img src={trash} alt="excluir" title="remover item" />
           </a>
           <br />

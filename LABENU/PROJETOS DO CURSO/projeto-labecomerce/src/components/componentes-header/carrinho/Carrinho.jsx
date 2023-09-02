@@ -1,43 +1,20 @@
 import "./Carrinho.scss";
 import ItensCarro from "./itens_do_carrinho/ItensCarro";
 import Fechar from "../../../assets-img/icons/botao fechar.png";
-import { useEffect, useState } from "react";
-
 
 const Carrinho = (props) => {
-
-
-    let novoObj;
-
-    const excluir = (itemId) => {
-      alert("Você Excluiu o produto")
-      props.abreCarro();
-    };
-    
-
-    novoObj = props.objeto.map((item, i) => (<li key={i}>
-      <ItensCarro
-        excluir={(item) => excluir(item.id)}
-        classificacao={item.rate}
-        category={item.categoria}
-        imagem={item.image}
-        preco={item.precoUnitario}
-        descricao={item.descricao}
-        nome={item.nomeProduto}
-      />
-    </li>));
-
-
-
-
-
+  
   const comprar = () => {
     alert(
       `Obrigado Por comprar no Labecomerce! Você será Redirecionado para a pagina do pagamento!`
     );
+    props.modificaCarro([])
     props.abreCarro();
   };
 
+  const newObject = props.objeto;
+
+  
 
 
   return (
@@ -49,7 +26,20 @@ const Carrinho = (props) => {
           <img src={Fechar} alt="" />
         </span>
         <ul>
-          {novoObj}
+          {newObject.length > 0 ? newObject.map((item, i) => (<li key={i}>
+    <ItensCarro
+        item={item}
+        modificaCarro={props.modificaCarro}
+        id={item.id}
+        classificacao={item.rate}
+        category={item.categoria}
+        imagem={item.image}
+        preco={item.precoUnitario}
+        descricao={item.descricao}
+        nome={item.nomeProduto}
+        objeto={props.objeto}
+    />
+</li>)) : ""}
         </ul>
         <button onClick={comprar} className="Final">
           Finalizar todos

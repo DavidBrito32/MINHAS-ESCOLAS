@@ -43,7 +43,6 @@ const listarTeams = (id) => {
         </li>`;
     }
 }
-
 listarTeams();
 
 const adicionarTeam = () => {
@@ -70,7 +69,7 @@ const deletarTeam = (id) => {
     if(confirmacao){
         let aux = [];
         for(let i = 0; i < teams.length; i++){
-            if(teams[i].id != id){
+            if(listaObjeto[i]. != id){
                 aux.push(teams[i]);
             }
         }
@@ -117,8 +116,7 @@ const fecharFormParticipantes = () => {
 const adicionarParticipante = () => {
     event.preventDefault();
 
-    for(let i = 0; i < teams.length; i++){
-        
+    for(let i = 0; i < teams.length; i++){        
         if(teams[i].participantes.length < Number(teams[i].qtd)){
             if(teams[i].id === Number(teamId.value)){
                 teams[i].participantes.push(nomeParticipante.value);

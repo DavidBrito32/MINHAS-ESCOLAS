@@ -1,35 +1,38 @@
-import img1 from "./IMAGENS PROJETO/1.jpg";
-import img2 from "./IMAGENS PROJETO/2.webp";
-import img3 from "./IMAGENS PROJETO/3.webp";
-import img4 from "./IMAGENS PROJETO/4.webp";
-import img5 from "./IMAGENS PROJETO/5.jpg";
-import img6 from "./IMAGENS PROJETO/6.jpg";
-import img7 from "./IMAGENS PROJETO/banner labecomerce.png";
-import img8 from "./IMAGENS PROJETO/8.webp";
-import img9 from "./IMAGENS PROJETO/9.jpg";
-import img10 from "./IMAGENS PROJETO/10.webp";
-import img11 from "./IMAGENS PROJETO/11.webp";
-import img12 from "./IMAGENS PROJETO/12.webp";
+import img1 from "./IMAGENS DA FAKE API/Observatorio_espacial_Russo.webp";
+import img2 from "./IMAGENS DA FAKE API/drone_espacial_ingenuity.jpg";
+import img3 from "./IMAGENS DA FAKE API/gerador_de_campo_gravitacional.jpeg";
+import img4 from "./IMAGENS DA FAKE API/hubble.jpeg";
+import img5 from "./IMAGENS DA FAKE API/james_web.webp";
+import img6 from "./IMAGENS DA FAKE API/modulo_de_pouso_sovietico.jpg";
+import img7 from "./IMAGENS DA FAKE API/modulo_ranger.jpg";
+import img8 from "./IMAGENS DA FAKE API/onibus_espacial.jpg";
+import img9 from "./IMAGENS DA FAKE API/pistola_de_gravitons.jpg";
+import img10 from "./IMAGENS DA FAKE API/sensor_lidar.jpg";
+import img11 from "./IMAGENS DA FAKE API/sonda_espacial.jpg";
+import img12 from "./IMAGENS DA FAKE API/tensor_microship.webp";
+//import das imagens espaciais
 
 export const ListarProdutos = [
   {
     id: 1,
     image: `${img1}`,
-    nomeProduto: `Nike Mario`,
-    precoUnitario: 1200,
-    categoria: "Deluxe-Edition",
-    descricao: "Air Jordan Exclusive Edition Mario",
-    desconto: 1777,
+    nomeProduto: `Observatorio Spacial Russo`,
+    precoUnitario: 12000000,
+    categoria: "Monument",
+    descricao:
+      "Um Observatorio espacial da decada 80 com todos os seus instrumentos funcionais",
+    desconto: 13500000,
     rate: "4,5",
     promocao: true,
   },
   {
     id: 2,
     image: `${img2}`,
-    nomeProduto: "Nike Supreme Edition",
-    precoUnitario: 200,
-    categoria: "Premium-Edition",
-    descricao: "Nike edição supreme edition 2022",
+    nomeProduto: "Drone Ingenuity",
+    precoUnitario: 15000000,
+    categoria: "NASA",
+    descricao:
+      "Drone que Fez um pouso historico em marte, onde enviou varios dados para a terra [ FUNCIONAL ]",
     desconto: 0,
     rate: "4,9",
     promocao: false,
@@ -37,10 +40,10 @@ export const ListarProdutos = [
   {
     id: 3,
     image: `${img3}`,
-    nomeProduto: "Nike boss Edition for Girls ",
-    precoUnitario: 500,
-    categoria: "Normal Edition",
-    descricao: "Edition Girls women",
+    nomeProduto: "Gerador de campos gravitacionais",
+    precoUnitario: 240000,
+    categoria: "NASA",
+    descricao: "Gerador de campos gravitacionais com raios gama",
     desconto: 0,
     rate: "4,8",
     promocao: false,
@@ -48,10 +51,11 @@ export const ListarProdutos = [
   {
     id: 4,
     image: `${img4}`,
-    nomeProduto: "Nike White/Golden lux edition",
-    precoUnitario: 400,
-    categoria: "Summer",
-    descricao: "Nike color white golden",
+    nomeProduto: "Telescopio Hubble",
+    precoUnitario: 150000,
+    categoria: "NASA",
+    descricao:
+      "Uma das maiores revoluções espaciais foi proporcionada por este telescopio, ele revolucionou a industria espacial na epoca",
     desconto: 0,
     rate: "5,0",
     promocao: false,
@@ -59,10 +63,11 @@ export const ListarProdutos = [
   {
     id: 5,
     image: `${img5}`,
-    nomeProduto: "Nike Ultra Gear Green",
-    precoUnitario: 312,
-    categoria: "Deluxe-Edition",
-    descricao: "Version nike maldives green",
+    nomeProduto: "JAMES WEB Telescopy",
+    precoUnitario: 500000000,
+    categoria: "NASA",
+    descricao:
+      "O que ha mais avançado na tecnologia espacial nesses tempos modernos, não existe atualmente tecnologia superior",
     desconto: 0,
     rate: "5,0",
     promocao: false,
@@ -70,10 +75,11 @@ export const ListarProdutos = [
   {
     id: 6,
     image: `${img6}`,
-    nomeProduto: "Nike Extra edition",
-    precoUnitario: 1199.98,
-    categoria: "Deluxe-Edition",
-    descricao: "Version exclusive",
+    nomeProduto: "Modulo de pouso sovietico",
+    precoUnitario: 15000000,
+    categoria: "Roscosmos",
+    descricao:
+      "Modulo de pouso perdido da russia, recuperado na guerra fria ao ficar em orbita proximo ao centro espacial",
     desconto: 2300,
     rate: "4,8",
     promocao: true,
@@ -81,21 +87,22 @@ export const ListarProdutos = [
   {
     id: 7,
     image: `${img7}`,
-    nomeProduto: "Super Exclusive Edition",
-    precoUnitario: 17562,
-    categoria: "Deluxe-Edition",
-    descricao: "Version exclusive",
-    desconto: 24565,
+    nomeProduto: "Modulo de Fulga estilo Ranger",
+    precoUnitario: 12000000,
+    categoria: "Roscosmos",
+    descricao:
+      "Modulo desenvolvdo para saidas de emergencia do centro espacial russo",
+    desconto: 13000000,
     rate: "3,5",
     promocao: true,
   },
   {
     id: 8,
     image: `${img8}`,
-    nomeProduto: "Premium editon",
-    precoUnitario: 27560,
-    categoria: "Deluxe-Edition",
-    descricao: "Version exclusive",
+    nomeProduto: "1° Onibus espacial a ir ao espaço",
+    precoUnitario: 200000000,
+    categoria: "NASA",
+    descricao: "Versão Funcional, disponivel para voo imediato",
     desconto: 34569,
     rate: "3,5",
     promocao: true,
@@ -103,10 +110,10 @@ export const ListarProdutos = [
   {
     id: 9,
     image: `${img9}`,
-    nomeProduto: "Nike Force Premium",
-    precoUnitario:4563,
-    categoria: "Deluxe-Edition",
-    descricao: "Version exclusive",
+    nomeProduto: "Pistola De Gravitons",
+    precoUnitario: 115000,
+    categoria: "Roscosmos",
+    descricao: "Pistola com recarga automatica de gravitons da materia escura",
     desconto: 0,
     rate: "3,5",
     promocao: false,
@@ -114,9 +121,9 @@ export const ListarProdutos = [
   {
     id: 10,
     image: `${img10}`,
-    nomeProduto: "Nike Deluxe Edition",
+    nomeProduto: "Sensor LIDAR Alcance 100 anos LUZ",
     precoUnitario: 4562,
-    categoria: "Deluxe-Edition",
+    categoria: "NASA",
     descricao: "Version exclusive",
     desconto: 6500,
     rate: "3,5",
@@ -125,21 +132,21 @@ export const ListarProdutos = [
   {
     id: 11,
     image: `${img11}`,
-    nomeProduto: "Super Exclusive Edition",
-    precoUnitario:4564,
-    categoria: "Deluxe-Edition",
-    descricao: "Version exclusive",
-    desconto: 7600,
+    nomeProduto: "Sonda Curiosity",
+    precoUnitario: 8000000,
+    categoria: "NASA",
+    descricao: "1° Sonda a entrar com sucesso na orbita de jupter",
+    desconto: 9500000,
     rate: "3,5",
     promocao: true,
   },
   {
     id: 12,
     image: `${img12}`,
-    nomeProduto: "Nike Avance Premium Plus",
-    precoUnitario: 2566,
-    categoria: "Deluxe-Edition",
-    descricao: "Version exclusive",
+    nomeProduto: "Tensor Microship Google",
+    precoUnitario: 15000000,
+    categoria: "Google",
+    descricao: "Microship que controla uma nave",
     desconto: 0,
     rate: "3,5",
     promocao: false,

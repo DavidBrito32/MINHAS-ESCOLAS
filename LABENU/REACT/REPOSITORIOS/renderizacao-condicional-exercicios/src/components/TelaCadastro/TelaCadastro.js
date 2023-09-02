@@ -10,7 +10,7 @@ import {
 function TelaCadastro(props) {
   const cadastrar = () => {
     // fluxo de cadastro (ainda veremos)
-    props.mudarTela("TelaPrincipal");
+    props.mudarTela("TelaEndereco");
   };
 
   const mostrarTelaLogin = () => {

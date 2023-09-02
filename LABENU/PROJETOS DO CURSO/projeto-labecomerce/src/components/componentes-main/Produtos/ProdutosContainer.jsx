@@ -5,23 +5,21 @@ import { Selecao } from "../../styles/Styles";
 import { useState } from "react";
 
 const ProdutosContainer = (props) => {
-
   const [valor, setValor] = useState();
 
   const FormataMoeda = (valor) => {
-      if(valor > 0){
-        let numberFormat = new Intl.NumberFormat('pt-BR', {
-          style: 'currency',
-          currency: 'BRL'
-        }).format(valor);
-        return numberFormat;
-      }
-  }
-
+    if (valor > 0) {
+      let numberFormat = new Intl.NumberFormat("pt-BR", {
+        style: "currency",
+        currency: "BRL",
+      }).format(valor);
+      return numberFormat;
+    }
+  };
 
   const filtroValor = (e) => {
-    setValor(e.target.value)
-  } 
+    setValor(e.target.value);
+  };
 
   const produtosListados = ListarProdutos.filter((item) =>
     item.nomeProduto.toLowerCase().includes(props.search.toLowerCase())
@@ -38,12 +36,14 @@ const ProdutosContainer = (props) => {
         promo={item.promocao}
         objeto={item}
         carro={props.carro}
+        categoria={item.categoria}
       />
     </li>
   ));
 
-  
-  const select = ListarProdutos.filter((item) => (item.precoUnitario < valor) || (item.promocao && valor) ).map((item) => 
+  const select = ListarProdutos.filter(
+    (item) => item.precoUnitario <= valor || (item.promocao && valor)
+  ).map((item) => (
     <li key={item.id}>
       <Card
         comprasCarro={props.comprasCarro}
@@ -56,11 +56,10 @@ const ProdutosContainer = (props) => {
         promo={item.promocao}
         objeto={item}
         carro={props.carro}
+        categoria={item.categoria}
       />
     </li>
-  )
-
-
+  ));
 
   return (
     <>
@@ -68,12 +67,12 @@ const ProdutosContainer = (props) => {
         <h2>
           Produtos
           <Selecao onChange={(e) => filtroValor(e)}>
+            <option value={3000000000}>Selecione</option>
             <option value={"true"}>Promoção</option>
-            <option value={250}>De 0 até $-250</option>
-            <option value={500}>Ate $-500</option>
-            <option value={1000}>De 0 Ate $-1000</option>
-            <option value={10000}>até $-10.000</option>
-            <option value={30000}>até $- 30.000</option>
+            <option value={500000}>De 0 Ate $-500.000</option>
+            <option value={1000000}>até $-1.000.000</option>
+            <option value={13000000000}>Ate $-13.000.000</option>
+            <option value={500000000}>até $- 500.000.000.000</option>
           </Selecao>
         </h2>
         <ul>{select.length > 0 ? select : produtosListados}</ul>
