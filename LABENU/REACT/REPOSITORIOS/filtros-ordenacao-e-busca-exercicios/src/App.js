@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 import { useState } from "react";
 import styled, { createGlobalStyle } from "styled-components";
 import pokemons from "./pokemon/pokemon.json";
@@ -13,6 +14,7 @@ const GlobalStyle = createGlobalStyle`
   
   }
 `;
+
 const CardsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
@@ -21,6 +23,8 @@ const CardsContainer = styled.div`
 function App() {
   const [pesquisa, setPesquisa] = useState("");
   const [idFilter, setIdFilter] = useState("");
+  const [pokeType, setPokeType] = useState("");
+  const [order, setOrder] = useState("");
 
   return (
     <>
@@ -30,13 +34,36 @@ function App() {
         setIdFilter={setIdFilter}
         pesquisa={pesquisa}
         setPesquisa={setPesquisa}
+        pokeType={pokeType}
+        setPokeType={setPokeType}
+        order={order}
+        setOrder={setOrder}
       />
       <CardsContainer>
-        {pokemons.filter((pokemon) => {
-          return idFilter ? pokemon.id.includes(idFilter) : pokemon
-        })
+        {pokemons
           .filter((pokemon) => {
-            return pokemon.name.english.toLowerCase().includes(pesquisa.toLowerCase());
+            return idFilter ? pokemon.id.includes(idFilter) : pokemon;
+          })
+          .filter((pokemon) => {
+            return pokemon.name.english
+              .toLowerCase()
+              .includes(pesquisa.toLowerCase());
+          })
+          .filter((item) => {
+            if (pokeType !== "") {
+              return item.type[0] === pokeType;
+            } else {
+              return item;
+            }
+          })
+          .sort(() => {
+            if (order === "asc") {
+              return 0;
+            } else if (order === "desc") {
+              return -1;
+            } else {
+              return 1;
+            }
           })
           .map((pokemon) => {
             return (
