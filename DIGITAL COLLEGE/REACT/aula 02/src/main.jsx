@@ -2,24 +2,6 @@
 import { createGlobalStyle } from 'styled-components';
 import ReactDOM from 'react-dom/client';
 import {App} from './App.jsx';
-
-// import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-
-// const route = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: "",
-//     children: [],
-//     errorElement: ""
-//   },
-//   {
-//     path: "/sobre",
-//     element: "",
-//     children: [],
-//     errorElement: ""
-//   }
-// ]);
-
 export const Estilo = createGlobalStyle`
   *{
     margin: 0;
@@ -34,9 +16,6 @@ export const Estilo = createGlobalStyle`
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <>
-      {/* <RouterProvider router={route}>
-          
-      </RouterProvider> */}
       <Estilo />
       <App/>
     </>

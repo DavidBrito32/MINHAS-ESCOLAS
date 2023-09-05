@@ -7,15 +7,6 @@ const ListMenu = ({ burguer, carrinho }) => {
     <div>
       <ul className={burguer ? "ListMenu active" : "ListMenu"}>
         <li>
-          <a href={"#!"}>Home</a>
-        </li>
-        <li>
-          <a href={"#!"}>Products</a>
-        </li>
-        <li>
-          <a href={"#!"}>Login</a>
-        </li>
-        <li>
           <a onClick={carrinho} href={"#!"}><img src={car} alt="" /></a>
         </li>
       </ul>

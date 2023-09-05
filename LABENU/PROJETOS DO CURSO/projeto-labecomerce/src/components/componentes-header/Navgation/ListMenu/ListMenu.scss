@@ -2,7 +2,7 @@
 
 .ListMenu {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   gap: 20px;
   height: 100%;
@@ -19,7 +19,7 @@
     color: $Primary-color;
 
     img{
-      width: 50px;
+      width: 60px;
     }
 
     &:hover {

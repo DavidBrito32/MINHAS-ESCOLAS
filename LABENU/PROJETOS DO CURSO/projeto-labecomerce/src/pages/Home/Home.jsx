@@ -6,8 +6,8 @@ import Carrinho from "../../components/componentes-header/carrinho/Carrinho";
 
 function Home() {
   if (localStorage.getItem('armazenaCarro') !== null) {
-    console.log('A chave existe no localStorage.');
   } else {
+    console.log('A chave não existe no localStorage.');
     localStorage.setItem('armazenaCarro', JSON.stringify([])); 
   }
   
