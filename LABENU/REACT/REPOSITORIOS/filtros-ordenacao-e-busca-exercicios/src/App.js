@@ -51,19 +51,28 @@ function App() {
           })
           .filter((item) => {
             if (pokeType !== "") {
-              return item.type[0] === pokeType;
+              return item.type.includes(pokeType);
             } else {
               return item;
             }
           })
-          .sort(() => {
-            if (order === "asc") {
-              return 0;
-            } else if (order === "desc") {
-              return -1;
-            } else {
-              return 1;
-            }
+          .sort((a , b) => {
+            
+            if(order === "asc"){return a.name.english > b.name.english ? 10 : -10}
+            if(order === "desc"){return a.name.english < b.name.english ? 10 : -10}
+
+            // if (order === "asc") {
+            //   return a.name.english.localeCompare(b.name.english)
+            //   // if(a.name.english > b.name.english){
+            //   //   return 1;
+            //   // }else if(a.name.english < b.name.english){
+            //   //   return -1;
+            //   // }else{
+            //   //   return 0;
+            //   // }
+            // }else if(order === 'desc'){
+            //   return b.name.english.localeCompare(a.name.english)
+            // }
           })
           .map((pokemon) => {
             return (

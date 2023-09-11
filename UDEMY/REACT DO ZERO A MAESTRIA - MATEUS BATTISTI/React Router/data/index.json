@@ -1,0 +1,20 @@
+{
+    "products":[
+        {
+            "id": 1,
+            "nome": "Uranio K57",
+            "price": 59.9
+        },
+        {
+            "id": 2,
+            "nome": "Titanium",
+            "price": 59.9
+        },
+        {
+            "id": 3,
+            "nome": "Cezio",
+            "price": 59.9
+        }
+    ]
+
+}

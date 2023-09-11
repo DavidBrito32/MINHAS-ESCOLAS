@@ -4,7 +4,13 @@ import oferta from "../../../assets-img/icons/Design sem nome.svg";
 
 const Card = (props) => {
   function addCarrinho() {
-    const newObject = [...props.carro, props.objeto]; 
+    let order = props.carro
+    .filter((item) => item !== props.objeto)
+    .sort(() => {
+      return 0
+    })
+
+    const newObject = [...order, props.objeto]; 
     props.comprasCarro(newObject);
   }
 
@@ -20,6 +26,7 @@ const Card = (props) => {
       </div>
       <h4>{props.nomeProduto}</h4>
       <p>{props.descricao}</p>
+      <p className="category">{props.categoria}</p>
       <h5>
         <strong>{props.precoUnitario}</strong>{" "}
         <p>
