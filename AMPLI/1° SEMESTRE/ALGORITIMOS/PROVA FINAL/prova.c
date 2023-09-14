@@ -1,13 +1,21 @@
+
 #include <stdio.h>
 
-void main(){
+int fat (int n){
+int res = 1;
+while (n > 1) {
+res = res * n;
+n--;
+}
+return res;
+}
 
-  float c, f;
+int main ( ){
 
-  printf("Escreva a temperatura em Graus Celsius");
-  scanf("%f", &c);
-  f = ((9 * c) / 5) + 32;
-
-  printf(" %2.f", f);
-
+int n, res;
+printf("Entre com o valor de n: ");
+scanf("%d", &n);
+res = fat(n+1) / (n+1);
+printf("Fatorial de %d = %d\n", n, res );
+return 0;
 }
