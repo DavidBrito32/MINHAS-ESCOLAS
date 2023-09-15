@@ -44,7 +44,6 @@ body {
   gap: 10px;
   justify-content: space-between;
   position: relative;
-  overflow: hidden;
   border: 5px groove black;
   box-shadow: 1px 20px 30px black;
   cursor: pointer;
