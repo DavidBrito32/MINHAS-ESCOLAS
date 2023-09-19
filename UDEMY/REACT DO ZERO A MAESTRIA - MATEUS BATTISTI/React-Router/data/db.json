@@ -1,0 +1,70 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Camisa",
+      "price": 59.9,
+      "image": "https://th.bing.com/th/id/OIP.QslKu1KIA114MJaFnBj99wHaFg?pid=ImgDet&rs=1"
+    },
+    {
+      "id": 2,
+      "name": "Short Estilo Bermuda",
+      "price": 119.9,
+      "image": "https://th.bing.com/th/id/OIP.QslKu1KIA114MJaFnBj99wHaFg?pid=ImgDet&rs=1"
+    },
+    {
+      "name": "Flanela MonBijou",
+      "price": "26",
+      "id": 7,
+      "image": "https://th.bing.com/th/id/OIP.QslKu1KIA114MJaFnBj99wHaFg?pid=ImgDet&rs=1"
+    },
+    {
+      "name": "Bolacha Cream Cracker",
+      "price": "5",
+      "id": 8,
+      "image": "https://th.bing.com/th/id/OIP.QslKu1KIA114MJaFnBj99wHaFg?pid=ImgDet&rs=1"
+    },
+    {
+      "name": "Mouse Redragon K634",
+      "price": "500",
+      "id": 9,
+      "image": "https://th.bing.com/th/id/OIP.QslKu1KIA114MJaFnBj99wHaFg?pid=ImgDet&rs=1"
+    },
+    {
+      "name": "Agua Mineral",
+      "price": "7",
+      "id": 10,
+      "image": "https://th.bing.com/th/id/OIP.QslKu1KIA114MJaFnBj99wHaFg?pid=ImgDet&rs=1"
+    },
+    {
+      "name": "Luva Sirurgica",
+      "price": "24",
+      "id": 11,
+      "image": "https://th.bing.com/th/id/OIP.QslKu1KIA114MJaFnBj99wHaFg?pid=ImgDet&rs=1"
+    },
+    {
+      "name": "Mouse Logitech",
+      "price": "450",
+      "id": 12,
+      "image": "https://th.bing.com/th/id/OIP.QslKu1KIA114MJaFnBj99wHaFg?pid=ImgDet&rs=1"
+    },
+    {
+      "name": "Mini Processador de vegetais",
+      "price": "150",
+      "id": 13,
+      "image": "https://th.bing.com/th/id/OIP.QslKu1KIA114MJaFnBj99wHaFg?pid=ImgDet&rs=1"
+    },
+    {
+      "name": "Liquidificador Caseiro",
+      "price": "500",
+      "id": 14,
+      "image": "https://th.bing.com/th/id/OIP.QslKu1KIA114MJaFnBj99wHaFg?pid=ImgDet&rs=1"
+    },
+    {
+      "name": "Computador Apple M2 Pro",
+      "price": "50000",
+      "id": 15,
+      "image": "https://th.bing.com/th/id/OIP.QslKu1KIA114MJaFnBj99wHaFg?pid=ImgDet&rs=1"
+    }
+  ]
+}
